@@ -142,8 +142,8 @@ app.get("/", (req, res) => {
     return;
   }
 
-  // res.sendFile(path.join(__dirname, "index.html"));
-  res.redirect('https://maintenance.hermitguessr.xyz')
+  res.sendFile(path.join(__dirname, "index.html"));
+  // res.redirect('https://maintenance.hermitguessr.xyz')
 });
 
 app.get("/leaderboard", (req, res) => {

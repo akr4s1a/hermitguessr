@@ -1,0 +1,2787 @@
+{
+    "UnderSubBaseHouse.webp": {
+        "x": 1647,
+        "z": 1504,
+        "season": 8
+    },
+    "HorseHeads.webp": {
+        "x": 1583,
+        "z": 1152,
+        "season": 8
+    },
+    "BridgeIntersection.webp": {
+        "x": 1173,
+        "z": 1126,
+        "season": 8
+    },
+    "OctoChunk.webp": {
+        "x": 282,
+        "z": -186,
+        "season": 8
+    },
+    "ShulkerFarm.webp": {
+        "x": 57,
+        "z": -261,
+        "season": 8
+    },
+    "TFCBase.webp": {
+        "x": 1253,
+        "z": -977,
+        "season": 8
+    },
+    "Diagon.webp": {
+        "x": 979,
+        "z": -814,
+        "season": 8
+    },
+    "TrainShop.webp": {
+        "x": 938,
+        "z": -745,
+        "season": 8
+    },
+    "HourGlass.webp": {
+        "x": 904,
+        "z": -793,
+        "season": 8
+    },
+    "MumboPond.webp": {
+        "x": 828,
+        "z": -786,
+        "season": 8
+    },
+    "Sluge.webp": {
+        "x": 769,
+        "z": -872,
+        "season": 8
+    },
+    "Phantoms.webp": {
+        "x": 705,
+        "z": -883,
+        "season": 8
+    },
+    "MumboVan.webp": {
+        "x": 819,
+        "z": -715,
+        "season": 8
+    },
+    "BoatemHole.webp": {
+        "x": 839,
+        "z": -684,
+        "season": 8
+    },
+    "BoatemTotem.webp": {
+        "x": 839,
+        "z": -684,
+        "season": 8
+    },
+    "BoatemFern.webp": {
+        "x": 856,
+        "z": -634,
+        "season": 8
+    },
+    "WagonLinkOne.webp": {
+        "x": 900,
+        "z": -606,
+        "season": 8
+    },
+    "WagonAreaRoad.webp": {
+        "x": 944,
+        "z": -522,
+        "season": 8
+    },
+    "LeafSleep.webp": {
+        "x": 1148,
+        "z": -301,
+        "season": 8
+    },
+    "ClockStealer.webp": {
+        "x": 1142,
+        "z": -80,
+        "season": 8
+    },
+    "WalkerThingCleoJoe.webp": {
+        "x": 1039,
+        "z": 1140,
+        "season": 8
+    },
+    "CleoChurch.webp": {
+        "x": 977,
+        "z": 1204,
+        "season": 8
+    },
+    "CleoPub.webp": {
+        "x": 1065,
+        "z": 1293,
+        "season": 8
+    },
+    "CleoJoeHouse.webp": {
+        "x": 1013,
+        "z": 1345,
+        "season": 8
+    },
+    "CleoCastle.webp": {
+        "x": 1133,
+        "z": 1375,
+        "season": 8
+    },
+    "Mushroom.webp": {
+        "x": 1410,
+        "z": 1411,
+        "season": 8
+    },
+    "HorseHeadFarms.webp": {
+        "x": 1585,
+        "z": 1277,
+        "season": 8
+    },
+    "SubBase.webp": {
+        "x": 1754,
+        "z": 1450,
+        "season": 8
+    },
+    "ZephWallOfSheep.webp": {
+        "x": 1760,
+        "z": 626,
+        "season": 8
+    },
+    "LaunchSite.webp": {
+        "x": 1846,
+        "z": -52,
+        "season": 8
+    },
+    "XGarden.webp": {
+        "x": 1603,
+        "z": -207,
+        "season": 8
+    },
+    "XNether.webp": {
+        "x": 1576,
+        "z": -245,
+        "season": 8
+    },
+    "XVillage.webp": {
+        "x": 1420,
+        "z": -183,
+        "season": 8
+    },
+    "EvilEChest.webp": {
+        "x": 1273,
+        "z": -251,
+        "season": 8
+    },
+    "EvilE.webp": {
+        "x": 1311,
+        "z": -226,
+        "season": 8
+    },
+    "CubValley.webp": {
+        "x": 1258,
+        "z": -531,
+        "season": 8
+    },
+    "PearlDome.webp": {
+        "x": 1058,
+        "z": -702,
+        "season": 8
+    },
+    "GrianDome.webp": {
+        "x": 997,
+        "z": -832,
+        "season": 8
+    },
+    "JumboVillage.webp": {
+        "x": 858,
+        "z": -843,
+        "season": 8
+    },
+    "JumboTree.webp": {
+        "x": 831,
+        "z": -715,
+        "season": 8
+    },
+    "GrianStarter.webp": {
+        "x": 890,
+        "z": -696,
+        "season": 8
+    },
+    "JumboStore.webp": {
+        "x": 798,
+        "z": -718,
+        "season": 8
+    },
+    "ImpTruck.webp": {
+        "x": 707,
+        "z": -698,
+        "season": 8
+    },
+    "BoatemBalloon.webp": {
+        "x": 838,
+        "z": -683,
+        "season": 8
+    },
+    "BoatemHouse.webp": {
+        "x": 801,
+        "z": -635,
+        "season": 8
+    },
+    "Pearl.webp": {
+        "x": 836,
+        "z": -635,
+        "season": 8
+    },
+    "iSoar.webp": {
+        "x": 834,
+        "z": -566,
+        "season": 8
+    },
+    "ScarThing.webp": {
+        "x": 837,
+        "z": -516,
+        "season": 8
+    },
+    "ScarWagon.webp": {
+        "x": 899,
+        "z": -561,
+        "season": 8
+    },
+    "Logz.webp": {
+        "x": 547,
+        "z": -511,
+        "season": 8
+    },
+    "WalkerShop.webp": {
+        "x": 506,
+        "z": -418,
+        "season": 8
+    },
+    "RenVan.webp": {
+        "x": 431,
+        "z": -130,
+        "season": 8
+    },
+    "GoatThing.webp": {
+        "x": 495,
+        "z": -134,
+        "season": 8
+    },
+    "GemPalace.webp": {
+        "x": 626,
+        "z": 40,
+        "season": 8
+    },
+    "GemPath.webp": {
+        "x": 636,
+        "z": 129,
+        "season": 8
+    },
+    "FalseHouse.webp": {
+        "x": 734,
+        "z": 453,
+        "season": 8
+    },
+    "HorseRaceBridge.webp": {
+        "x": 1201,
+        "z": 515,
+        "season": 8
+    },
+    "LlamaS8.webp": {
+        "x": 1118,
+        "z": 144,
+        "season": 8
+    },
+    "CookieJar.webp": {
+        "x": 1240,
+        "z": 96,
+        "season": 8
+    },
+    "TangoShop.webp": {
+        "x": 1345,
+        "z": 63,
+        "season": 8
+    },
+    "Moon.webp": {
+        "x": 1449,
+        "z": 6,
+        "season": 8
+    },
+    "LogShop.webp": {
+        "x": 1358,
+        "z": -14,
+        "season": 8
+    },
+    "Fifi.webp": {
+        "x": 1240,
+        "z": -9,
+        "season": 8
+    },
+    "GemHub.webp": {
+        "x": 685,
+        "z": 80,
+        "season": 8
+    },
+    "GasStation1.webp": {
+        "x": 546,
+        "z": 251,
+        "season": 8
+    },
+    "WalkerHub.webp": {
+        "x": 257,
+        "z": 41,
+        "season": 8
+    },
+    "SpawnEgg.webp": {
+        "x": 146,
+        "z": 164,
+        "season": 8
+    },
+    "GasStation2.webp": {
+        "x": 129,
+        "z": 178,
+        "season": 8
+    },
+    "Airport.webp": {
+        "x": -55,
+        "z": 506,
+        "season": 8
+    },
+    "CrackedSavannah.webp": {
+        "x": 565,
+        "z": 793,
+        "season": 8
+    },
+    "MagicalRedstone.webp": {
+        "x": 639,
+        "z": 745,
+        "season": 8
+    },
+    "HiddenHouse.webp": {
+        "x": 586,
+        "z": 692,
+        "season": 8
+    },
+    "GasStation3.webp": {
+        "x": 631,
+        "z": 646,
+        "season": 8
+    },
+    "Grumbot.webp": {
+        "x": -353,
+        "z": 33,
+        "season": 7
+    },
+    "MumboStudio.webp": {
+        "x": -349,
+        "z": -2,
+        "season": 7
+    },
+    "MilkFactory.webp": {
+        "x": -280,
+        "z": -86,
+        "season": 7
+    },
+    "PinkPyramid.webp": {
+        "x": -248,
+        "z": -250,
+        "season": 7
+    },
+    "HepTower.webp": {
+        "x": -128,
+        "z": -125,
+        "season": 7
+    },
+    "MountHermitMore.webp": {
+        "x": -97,
+        "z": -97,
+        "season": 7
+    },
+    "ShoppingDistrictOutsideLight.webp": {
+        "x": -100,
+        "z": -55,
+        "season": 7
+    },
+    "DiamondThrone.webp": {
+        "x": -44,
+        "z": -88,
+        "season": 7
+    },
+    "RecordStore.webp": {
+        "x": -9,
+        "z": -63,
+        "season": 7
+    },
+    "Saloon.webp": {
+        "x": 16,
+        "z": -95,
+        "season": 7
+    },
+    "WallpaperStore.webp": {
+        "x": 31,
+        "z": -97,
+        "season": 7
+    },
+    "TownRoundAbout.webp": {
+        "x": 24,
+        "z": -199,
+        "season": 7
+    },
+    "XTheatre.webp": {
+        "x": 67,
+        "z": -161,
+        "season": 7
+    },
+    "TownBuilding.webp": {
+        "x": 76,
+        "z": -224,
+        "season": 7
+    },
+    "TownSandTimer.webp": {
+        "x": 25,
+        "z": -261,
+        "season": 7
+    },
+    "Snips.webp": {
+        "x": 18,
+        "z": -214,
+        "season": 7
+    },
+    "AquaTram.webp": {
+        "x": -24,
+        "z": -198,
+        "season": 7
+    },
+    "AquaFish.webp": {
+        "x": -60,
+        "z": -202,
+        "season": 7
+    },
+    "AquaDiner.webp": {
+        "x": -40,
+        "z": -182,
+        "season": 7
+    },
+    "ShoppingHut.webp": {
+        "x": 40,
+        "z": -62,
+        "season": 7
+    },
+    "BdubsConcrete.webp": {
+        "x": 94,
+        "z": 1,
+        "season": 7
+    },
+    "BoomersIceShopRoad.webp": {
+        "x": 97,
+        "z": 34,
+        "season": 7
+    },
+    "NetherShop.webp": {
+        "x": 128,
+        "z": -30,
+        "season": 7
+    },
+    "ChestShopJellie.webp": {
+        "x": 145,
+        "z": 13,
+        "season": 7
+    },
+    "FalseMayorTower.webp": {
+        "x": 288,
+        "z": -68,
+        "season": 7
+    },
+    "EthoQuiz.webp": {
+        "x": 195,
+        "z": 67,
+        "season": 7
+    },
+    "Shadee.webp": {
+        "x": 153,
+        "z": 90,
+        "season": 7
+    },
+    "BigMushroom.webp": {
+        "x": 126,
+        "z": 193,
+        "season": 7
+    },
+    "MazeMiniGame.webp": {
+        "x": 73,
+        "z": 332,
+        "season": 7
+    },
+    "TridentGame.webp": {
+        "x": 13,
+        "z": 404,
+        "season": 7
+    },
+    "Floatage.webp": {
+        "x": -29,
+        "z": 373,
+        "season": 7
+    },
+    "TurfWarGame.webp": {
+        "x": -208,
+        "z": 384,
+        "season": 7
+    },
+    "RainbowLetter.webp": {
+        "x": -727,
+        "z": 614,
+        "season": 7
+    },
+    "UnoReverse.webp": {
+        "x": -1135,
+        "z": 595,
+        "season": 7
+    },
+    "KeralisRecBoat.webp": {
+        "x": -1042,
+        "z": 298,
+        "season": 7
+    },
+    "KeralisDock.webp": {
+        "x": -998,
+        "z": 260,
+        "season": 7
+    },
+    "KeralisWoodBoat.webp": {
+        "x": -949,
+        "z": 106,
+        "season": 7
+    },
+    "KeralisCrane.webp": {
+        "x": -1002,
+        "z": -61,
+        "season": 7
+    },
+    "KeralisCargoShip.webp": {
+        "x": -964,
+        "z": -91,
+        "season": 7
+    },
+    "KeralisPortFirehouse.webp": {
+        "x": -971,
+        "z": -159,
+        "season": 7
+    },
+    "KeralisPortHQ.webp": {
+        "x": -1066,
+        "z": -99,
+        "season": 7
+    },
+    "KeralisHalfHouse.webp": {
+        "x": -1135,
+        "z": -19,
+        "season": 7
+    },
+    "KeralisCrosswalk.webp": {
+        "x": -1171,
+        "z": 38,
+        "season": 7
+    },
+    "KeralisFirehouse.webp": {
+        "x": -1183,
+        "z": -39,
+        "season": 7
+    },
+    "KeralisGraffiti.webp": {
+        "x": -1202,
+        "z": 10,
+        "season": 7
+    },
+    "KeralisFerris.webp": {
+        "x": -1171,
+        "z": 143,
+        "season": 7
+    },
+    "KeralisPlayground.webp": {
+        "x": -1255,
+        "z": 83,
+        "season": 7
+    },
+    "KeralisBusses.webp": {
+        "x": -1314,
+        "z": 38,
+        "season": 7
+    },
+    "XBrewery.webp": {
+        "x": -1366,
+        "z": 246,
+        "season": 7
+    },
+    "MumboCamp.webp": {
+        "x": -1340,
+        "z": 581,
+        "season": 7
+    },
+    "ScarSnail.webp": {
+        "x": -1271,
+        "z": 778,
+        "season": 7
+    },
+    "ScarGarden.webp": {
+        "x": -1216,
+        "z": 769,
+        "season": 7
+    },
+    "ScarBarn.webp": {
+        "x": -1169,
+        "z": 784,
+        "season": 7
+    },
+    "GrianManor.webp": {
+        "x": -1213,
+        "z": 998,
+        "season": 7
+    },
+    "GrianPit.webp": {
+        "x": -1270,
+        "z": 954,
+        "season": 7
+    },
+    "GrianSugarcane.webp": {
+        "x": -1176,
+        "z": 946,
+        "season": 7
+    },
+    "GrianBack.webp": {
+        "x": -1225,
+        "z": 1113,
+        "season": 7
+    },
+    "JungleEntrance.webp": {
+        "x": -1434,
+        "z": 887,
+        "season": 7
+    },
+    "ScarDrill.webp": {
+        "x": -1661,
+        "z": 689,
+        "season": 7
+    },
+    "ScarStorage.webp": {
+        "x": -1733,
+        "z": 749,
+        "season": 7
+    },
+    "XBuilding1.webp": {
+        "x": -1777,
+        "z": -81,
+        "season": 7
+    },
+    "XNetherPortal.webp": {
+        "x": -1516,
+        "z": -258,
+        "season": 7
+    },
+    "XBuilding2.webp": {
+        "x": -1574,
+        "z": -251,
+        "season": 7
+    },
+    "XPipe.webp": {
+        "x": -1731,
+        "z": -397,
+        "season": 7
+    },
+    "EthoExteriorInterior1.webp": {
+        "x": -1387,
+        "z": -444,
+        "season": 7
+    },
+    "EthoDeckedOut.webp": {
+        "x": -1391,
+        "z": -486,
+        "season": 7
+    },
+    "Timmy.webp": {
+        "x": -928,
+        "z": -340,
+        "season": 7
+    },
+    "Hasciendo.webp": {
+        "x": -865,
+        "z": -336,
+        "season": 7
+    },
+    "Wels.webp": {
+        "x": -871,
+        "z": -563,
+        "season": 7
+    },
+    "Golf.webp": {
+        "x": -339,
+        "z": -894,
+        "season": 7
+    },
+    "ToonTowers.webp": {
+        "x": 31,
+        "z": -397,
+        "season": 7
+    },
+    "CyberPunk.webp": {
+        "x": 467,
+        "z": -470,
+        "season": 7
+    },
+    "CyberPunkRim.webp": {
+        "x": 435,
+        "z": -503,
+        "season": 7
+    },
+    "ThreeFoxes1.webp": {
+        "x": 226,
+        "z": -1296,
+        "season": 7
+    },
+    "PrismarineBase.webp": {
+        "x": -526,
+        "z": -120,
+        "season": 7
+    },
+    "MoonBase.webp": {
+        "x": -130,
+        "z": 25,
+        "season": 7
+    },
+    "Barge.webp": {
+        "x": -73,
+        "z": 0,
+        "season": 7
+    },
+    "SpookyHouse.webp": {
+        "x": -6,
+        "z": 48,
+        "season": 7
+    },
+    "SpookyWitch.webp": {
+        "x": -35,
+        "z": 134,
+        "season": 7
+    },
+    "Scarra.webp": {
+        "x": -71,
+        "z": 174,
+        "season": 7
+    },
+    "Idea.webp": {
+        "x": 48,
+        "z": 81,
+        "season": 7
+    },
+    "CubPyramid.webp": {
+        "x": 616,
+        "z": 507,
+        "season": 7
+    },
+    "CleoZoo.webp": {
+        "x": 1583,
+        "z": 601,
+        "season": 7
+    },
+    "HypnoBoardwalk.webp": {
+        "x": 1491,
+        "z": -288,
+        "season": 7
+    },
+    "BDubsBridge.webp": {
+        "x": 1604,
+        "z": -967,
+        "season": 7
+    },
+    "BdubsHorse.webp": {
+        "x": 1569,
+        "z": -1030,
+        "season": 7
+    },
+    "BdubsCastle.webp": {
+        "x": 1787,
+        "z": -833,
+        "season": 7
+    },
+    "GermanGate.webp": {
+        "x": 1341,
+        "z": -1006,
+        "season": 7
+    },
+    "Vineyard.webp": {
+        "x": 1192,
+        "z": -1042,
+        "season": 7
+    },
+    "StuckFreighter.webp": {
+        "x": 1008,
+        "z": -1051,
+        "season": 7
+    },
+    "Tatooine.webp": {
+        "x": -630,
+        "z": 996,
+        "season": 7
+    },
+    "Lava.webp": {
+        "x": -708,
+        "z": 1028,
+        "season": 7
+    },
+    "TieFighter.webp": {
+        "x": -677,
+        "z": 916,
+        "season": 7
+    },
+    "JabaPalace.webp": {
+        "x": -770,
+        "z": 894,
+        "season": 7
+    },
+    "OtherHalfHouse.webp": {
+        "x": 1121,
+        "z": -804,
+        "season": 7
+    },
+    "Goat.webp": {
+        "x": 1060,
+        "z": -811,
+        "season": 7
+    },
+    "FantasyBoat.webp": {
+        "x": -432,
+        "z": -1340,
+        "season": 6
+    },
+    "Dojo.webp": {
+        "x": -267,
+        "z": -1346,
+        "season": 6
+    },
+    "FantasyTower.webp": {
+        "x": -392,
+        "z": -1246,
+        "season": 6
+    },
+    "CCorpFountain.webp": {
+        "x": -647,
+        "z": -1015,
+        "season": 6
+    },
+    "XTowers.webp": {
+        "x": -203,
+        "z": -415,
+        "season": 6
+    },
+    "QuartzTowers.webp": {
+        "x": -113,
+        "z": -428,
+        "season": 6
+    },
+    "WarBase.webp": {
+        "x": -118,
+        "z": -566,
+        "season": 6
+    },
+    "OtherBase.webp": {
+        "x": -306,
+        "z": -566,
+        "season": 6
+    },
+    "Podium.webp": {
+        "x": -169,
+        "z": -777,
+        "season": 6
+    },
+    "MultiColourRailStation.webp": {
+        "x": -100,
+        "z": -947,
+        "season": 6
+    },
+    "CBank.webp": {
+        "x": 235,
+        "z": -896,
+        "season": 6
+    },
+    "StatueOfHermity.webp": {
+        "x": 190,
+        "z": -1019,
+        "season": 6
+    },
+    "ScarCano.webp": {
+        "x": 247,
+        "z": -1372,
+        "season": 6
+    },
+    "CleoShip.webp": {
+        "x": 15,
+        "z": -1334,
+        "season": 6
+    },
+    "AirportRunway.webp": {
+        "x": 135,
+        "z": -931,
+        "season": 6
+    },
+    "IceGate.webp": {
+        "x": 21,
+        "z": -779,
+        "season": 6
+    },
+    "SakuraMnt.webp": {
+        "x": -74,
+        "z": -708,
+        "season": 6
+    },
+    "AttackAWool.webp": {
+        "x": -90,
+        "z": -649,
+        "season": 6
+    },
+    "StorageWars.webp": {
+        "x": -120,
+        "z": -634,
+        "season": 6
+    },
+    "GrianBase6.webp": {
+        "x": 390,
+        "z": -968,
+        "season": 6
+    },
+    "MumboRailBack.webp": {
+        "x": 821,
+        "z": -855,
+        "season": 6
+    },
+    "MumboRuin.webp": {
+        "x": 978,
+        "z": -947,
+        "season": 6
+    },
+    "Hexabee.webp": {
+        "x": 1150,
+        "z": -1026,
+        "season": 6
+    },
+    "XPrisX.webp": {
+        "x": 1247,
+        "z": -1152,
+        "season": 6
+    },
+    "TangoHell.webp": {
+        "x": 442,
+        "z": -16,
+        "season": 5
+    },
+    "NetherExpansePortal.webp": {
+        "x": 84,
+        "z": -120,
+        "season": 5
+    },
+    "WelsCastle.webp": {
+        "x": -226,
+        "z": 47,
+        "season": 5
+    },
+    "ScarCity.webp": {
+        "x": 131,
+        "z": 448,
+        "season": 5
+    },
+    "MumboHexBase.webp": {
+        "x": 1176,
+        "z": -1347,
+        "season": 5
+    },
+    "SkyCityGarden.webp": {
+        "x": -802,
+        "z": 415,
+        "season": 5
+    },
+    "GamesDistrict.webp": {
+        "x": 465,
+        "z": -1019,
+        "season": 5
+    },
+    "Rubix.webp": {
+        "x": 984,
+        "z": -895,
+        "season": 5
+    },
+    "RainbowCastle.webp": {
+        "x": -300,
+        "z": -1841,
+        "season": 5
+    },
+    "BlackHole.webp": {
+        "x": -1042,
+        "z": -760,
+        "season": 5
+    },
+    "XVolc.webp": {
+        "x": -986,
+        "z": -660,
+        "season": 5
+    },
+    "FalseMarket.webp": {
+        "x": -644,
+        "z": -765,
+        "season": 5
+    },
+    "FalseScaryMush.webp": {
+        "x": -456,
+        "z": -768,
+        "season": 5
+    },
+    "TreeBubble.webp": {
+        "x": -4213,
+        "z": -3336,
+        "season": 5
+    },
+    "NHOArena.webp": {
+        "x": -4302,
+        "z": -3455,
+        "season": 5
+    },
+    "NHOArea.webp": {
+        "x": -4319,
+        "z": -3558,
+        "season": 5
+    },
+    "EndPurpBridge.webp": {
+        "x": -1239,
+        "z": 1196,
+        "season": 4
+    },
+    "WoodenArchBridge.webp": {
+        "x": -1173,
+        "z": 1031,
+        "season": 4
+    },
+    "BadlandsPathIntersection.webp": {
+        "x": -1107,
+        "z": 1045,
+        "season": 4
+    },
+    "TripleH.webp": {
+        "x": -1114,
+        "z": 1144,
+        "season": 4
+    },
+    "DramaLlama.webp": {
+        "x": -1168,
+        "z": 1283,
+        "season": 4
+    },
+    "BadlandsStable.webp": {
+        "x": -1349,
+        "z": 1262,
+        "season": 4
+    },
+    "BadlandsBank.webp": {
+        "x": -1396,
+        "z": 1303,
+        "season": 4
+    },
+    "BadlandsDoubleChest.webp": {
+        "x": -1298,
+        "z": 1382,
+        "season": 4
+    },
+    "PumpkinCrafting.webp": {
+        "x": -1338,
+        "z": 1460,
+        "season": 4
+    },
+    "BadlandsLighthouse.webp": {
+        "x": -1363,
+        "z": 1578,
+        "season": 4
+    },
+    "BadlandsPrismarineFarm.webp": {
+        "x": -1207,
+        "z": 1656,
+        "season": 4
+    },
+    "BadlandsFirework.webp": {
+        "x": -1174,
+        "z": 1492,
+        "season": 4
+    },
+    "BadlandsBasementEntrance.webp": {
+        "x": -1080,
+        "z": 1439,
+        "season": 4
+    },
+    "EndStore.webp": {
+        "x": -1030,
+        "z": 1435,
+        "season": 4
+    },
+    "BadlandsSkull.webp": {
+        "x": -982,
+        "z": 1402,
+        "season": 4
+    },
+    "BadlandsRaceway.webp": {
+        "x": -928,
+        "z": 1309,
+        "season": 4
+    },
+    "BadlandsMarket.webp": {
+        "x": -1024,
+        "z": 1221,
+        "season": 4
+    },
+    "BadlandsTrain.webp": {
+        "x": -1066,
+        "z": 841,
+        "season": 4
+    },
+    "CubBadlandsLava.webp": {
+        "x": -1185,
+        "z": 657,
+        "season": 4
+    },
+    "PistonAndDrone.webp": {
+        "x": -1612,
+        "z": 730,
+        "season": 4
+    },
+    "MumboFloatingBase.webp": {
+        "x": -1444,
+        "z": 862,
+        "season": 4
+    },
+    "BadlandsGreenery.webp": {
+        "x": -1334,
+        "z": 927,
+        "season": 4
+    },
+    "octosub.webp": {
+        "x": -1818,
+        "z": 1455,
+        "season": 9
+    },
+    "teapot.webp": {
+        "x": -1836,
+        "z": 1520,
+        "season": 9
+    },
+    "coppergolem.webp": {
+        "x": -1894,
+        "z": 1406,
+        "season": 9
+    },
+    "falsetraintower.webp": {
+        "x": -1784,
+        "z": 1350,
+        "season": 9
+    },
+    "welsflowerstarter.webp": {
+        "x": -1740,
+        "z": 1375,
+        "season": 9
+    },
+    "compasshouse.webp": {
+        "x": -1655,
+        "z": 1468,
+        "season": 9
+    },
+    "xstarterintersection.webp": {
+        "x": -1608,
+        "z": 1587,
+        "season": 9
+    },
+    "outofordershop.webp": {
+        "x": -1564,
+        "z": 1591,
+        "season": 9
+    },
+    "xkelp.webp": {
+        "x": -1577,
+        "z": 1614,
+        "season": 9
+    },
+    "scarcookie.webp": {
+        "x": -1630,
+        "z": 1633,
+        "season": 9
+    },
+    "scarroot.webp": {
+        "x": -1662,
+        "z": 1651,
+        "season": 9
+    },
+    "scartreeportal.webp": {
+        "x": -1689,
+        "z": 1628,
+        "season": 9
+    },
+    "scarbedshop.webp": {
+        "x": -1666,
+        "z": 1616,
+        "season": 9
+    },
+    "mumbostartervault.webp": {
+        "x": -1730,
+        "z": 1669,
+        "season": 9
+    },
+    "kingquestchallenges.webp": {
+        "x": -1764,
+        "z": 1698,
+        "season": 9
+    },
+    "emptydiamondpile.webp": {
+        "x": -1754,
+        "z": 1683,
+        "season": 9
+    },
+    "grianstartertower.webp": {
+        "x": -1691,
+        "z": 1680,
+        "season": 9
+    },
+    "scarrootbridge.webp": {
+        "x": -1646,
+        "z": 1689,
+        "season": 9
+    },
+    "startersakura.webp": {
+        "x": -1647,
+        "z": 1715,
+        "season": 9
+    },
+    "pearlalienlantern.webp": {
+        "x": -1685,
+        "z": 1722,
+        "season": 9
+    },
+    "tangoantishop.webp": {
+        "x": -1665,
+        "z": 1801,
+        "season": 9
+    },
+    "starterhomeshop.webp": {
+        "x": -1724,
+        "z": 1796,
+        "season": 9
+    },
+    "starterhomeshop2.webp": {
+        "x": -1760,
+        "z": 1807,
+        "season": 9
+    },
+    "docpond.webp": {
+        "x": -1764,
+        "z": 1788,
+        "season": 9
+    },
+    "joesakuraforest.webp": {
+        "x": -1796,
+        "z": 1815,
+        "season": 9
+    },
+    "doctomatogardenhouse.webp": {
+        "x": -1796,
+        "z": 1768,
+        "season": 9
+    },
+    "joesakuraedge.webp": {
+        "x": -1865,
+        "z": 1820,
+        "season": 9
+    },
+    "cleoruins.webp": {
+        "x": -1750,
+        "z": 1902,
+        "season": 9
+    },
+    "scardeckedout2.webp": {
+        "x": -1668,
+        "z": 1859,
+        "season": 9
+    },
+    "bdubsbridge.webp": {
+        "x": -1793,
+        "z": 1937,
+        "season": 9
+    },
+    "bdubsentrance.webp": {
+        "x": -1799,
+        "z": 2019,
+        "season": 9
+    },
+    "bdubshorse.webp": {
+        "x": -1794,
+        "z": 2078,
+        "season": 9
+    },
+    "bdubshorsegame.webp": {
+        "x": -1754,
+        "z": 2134,
+        "season": 9
+    },
+    "dioritecathedral.webp": {
+        "x": -1689,
+        "z": 2049,
+        "season": 9
+    },
+    "outdoortcg.webp": {
+        "x": -1560,
+        "z": 1883,
+        "season": 9
+    },
+    "horseheadrock.webp": {
+        "x": -1825,
+        "z": 2146,
+        "season": 9
+    },
+    "gigapies.webp": {
+        "x": -1914,
+        "z": 2057,
+        "season": 9
+    },
+    "scarprotest.webp": {
+        "x": -1999,
+        "z": 2019,
+        "season": 9
+    },
+    "theentity.webp": {
+        "x": -1998,
+        "z": 2052,
+        "season": 9
+    },
+    "ibuy.webp": {
+        "x": -1982,
+        "z": 2155,
+        "season": 9
+    },
+    "underrocketshop.webp": {
+        "x": -2085,
+        "z": 2093,
+        "season": 9
+    },
+    "shoppingalley.webp": {
+        "x": -2115,
+        "z": 2110,
+        "season": 9
+    },
+    "gigarecords.webp": {
+        "x": -2146,
+        "z": 2121,
+        "season": 9
+    },
+    "bdubsvan.webp": {
+        "x": -2133,
+        "z": 2086,
+        "season": 9
+    },
+    "tcgpyramid.webp": {
+        "x": -2187,
+        "z": 2221,
+        "season": 9
+    },
+    "thegravelyard.webp": {
+        "x": -2216,
+        "z": 2136,
+        "season": 9
+    },
+    "dragonhead.webp": {
+        "x": -2387,
+        "z": 2211,
+        "season": 9
+    },
+    "cleomuseum.webp": {
+        "x": -2442,
+        "z": 2302,
+        "season": 9
+    },
+    "hermitsonian.webp": {
+        "x": -2375,
+        "z": 2302,
+        "season": 9
+    },
+    "museumportal.webp": {
+        "x": -2400,
+        "z": 2356,
+        "season": 9
+    },
+    "insidepinball.webp": {
+        "x": -2298,
+        "z": 2551,
+        "season": 9
+    },
+    "prismarineshack.webp": {
+        "x": -2067,
+        "z": 2646,
+        "season": 9
+    },
+    "scarvolc.webp": {
+        "x": -1560,
+        "z": 2512,
+        "season": 9
+    },
+    "scarvolcpond.webp": {
+        "x": -1544,
+        "z": 2456,
+        "season": 9
+    },
+    "scarforest.webp": {
+        "x": -1591,
+        "z": 2378,
+        "season": 9
+    },
+    "roadtocastle.webp": {
+        "x": -1628,
+        "z": 2314,
+        "season": 9
+    },
+    "scarlandplaza.webp": {
+        "x": -1489,
+        "z": 2281,
+        "season": 9
+    },
+    "scarlandmainroad.webp": {
+        "x": -1412,
+        "z": 2297,
+        "season": 9
+    },
+    "scarlandfood.webp": {
+        "x": -1329,
+        "z": 2274,
+        "season": 9
+    },
+    "tcgscarland.webp": {
+        "x": -1294,
+        "z": 2238,
+        "season": 9
+    },
+    "scarlandadmissions.webp": {
+        "x": -1194,
+        "z": 2298,
+        "season": 9
+    },
+    "scarlandhappy.webp": {
+        "x": -1139,
+        "z": 2297,
+        "season": 9
+    },
+    "grianbaseinside.webp": {
+        "x": -1026,
+        "z": 2260,
+        "season": 9
+    },
+    "grianmumbobridge.webp": {
+        "x": -1026,
+        "z": 2199,
+        "season": 9
+    },
+    "empiresportal.webp": {
+        "x": -1026,
+        "z": 2179,
+        "season": 9
+    },
+    "do2portal.webp": {
+        "x": -523,
+        "z": 2145,
+        "season": 9
+    },
+    "do2main.webp": {
+        "x": -523,
+        "z": 2013,
+        "season": 9
+    },
+    "frozencitadel.webp": {
+        "x": -523,
+        "z": 1998,
+        "season": 9
+    },
+    "pearlcart.webp": {
+        "x": -257,
+        "z": 1962,
+        "season": 9
+    },
+    "pearlcamp.webp": {
+        "x": -214,
+        "z": 1828,
+        "season": 9
+    },
+    "pearlindustry.webp": {
+        "x": -143,
+        "z": 1940,
+        "season": 9
+    },
+    "pearlforest.webp": {
+        "x": -49,
+        "z": 2010,
+        "season": 9
+    },
+    "pearlflower.webp": {
+        "x": 81,
+        "z": 2012,
+        "season": 9
+    },
+    "pearlimpbridge.webp": {
+        "x": 63,
+        "z": 1928,
+        "season": 9
+    },
+    "imphall.webp": {
+        "x": 64,
+        "z": 1863,
+        "season": 9
+    },
+    "gemcongrats.webp": {
+        "x": -38,
+        "z": 1791,
+        "season": 9
+    },
+    "gemtower.webp": {
+        "x": 48,
+        "z": 1822,
+        "season": 9
+    },
+    "gemgem.webp": {
+        "x": 141,
+        "z": 1759,
+        "season": 9
+    },
+    "gemboat.webp": {
+        "x": 231,
+        "z": 1701,
+        "season": 9
+    },
+    "goatmural.webp": {
+        "x": -1174,
+        "z": 2795,
+        "season": 9
+    },
+    "scabland.webp": {
+        "x": -1111,
+        "z": 3241,
+        "season": 9
+    },
+    "tntcannon.webp": {
+        "x": -1205,
+        "z": 3149,
+        "season": 9
+    },
+    "docspawner.webp": {
+        "x": -1086,
+        "z": 2916,
+        "season": 9
+    },
+    "docperi1.webp": {
+        "x": -928,
+        "z": 2810,
+        "season": 9
+    },
+    "docperi2.webp": {
+        "x": -967,
+        "z": 2542,
+        "season": 9
+    },
+    "docperi3.webp": {
+        "x": -1061,
+        "z": 2662,
+        "season": 9
+    },
+    "docperi4.webp": {
+        "x": -1364,
+        "z": 2792,
+        "season": 9
+    },
+    "docperi5.webp": {
+        "x": -1449,
+        "z": 2648,
+        "season": 9
+    },
+    "docperi6.webp": {
+        "x": -1446,
+        "z": 2541,
+        "season": 9
+    },
+    "docperi7.webp": {
+        "x": -1339,
+        "z": 2464,
+        "season": 9
+    },
+    "scarlandroof.webp": {
+        "x": -1369,
+        "z": 2325,
+        "season": 9
+    },
+    "christmasvillage1.webp": {
+        "x": -2094,
+        "z": 1468,
+        "season": 9
+    },
+    "christmasvillage2.webp": {
+        "x": -2092,
+        "z": 1448,
+        "season": 9
+    },
+    "christmasvillage3.webp": {
+        "x": -2140,
+        "z": 1476,
+        "season": 9
+    },
+    "sniffer.webp": {
+        "x": -2073,
+        "z": 1658,
+        "season": 9
+    },
+    "archchamps.webp": {
+        "x": -2080,
+        "z": 1599,
+        "season": 9
+    },
+    "startermushroom.webp": {
+        "x": -1849,
+        "z": 1640,
+        "season": 9
+    },
+    "hermissipi.webp": {
+        "x": -1778,
+        "z": 1641,
+        "season": 9
+    },
+    "starterbeef.webp": {
+        "x": -1749,
+        "z": 1581,
+        "season": 9
+    },
+    "starterbridge.webp": {
+        "x": -1804,
+        "z": 1538,
+        "season": 9
+    },
+    "gigapiestarter.webp": {
+        "x": -1843,
+        "z": 1584,
+        "season": 9
+    },
+    "mushroomgazebo.webp": {
+        "x": -1836,
+        "z": 1671,
+        "season": 9
+    },
+    "lastbud.webp": {
+        "x": -1836,
+        "z": 1695,
+        "season": 9
+    },
+    "pigpen.webp": {
+        "x": -1828,
+        "z": 1758,
+        "season": 9
+    },
+    "kingtower.webp": {
+        "x": -1792,
+        "z": 1907,
+        "season": 9
+    },
+    "abduction.webp": {
+        "x": -1676,
+        "z": 1750,
+        "season": 9
+    },
+    "keralisstarter.webp": {
+        "x": -1588,
+        "z": 1716,
+        "season": 9
+    },
+    "keralislogs.webp": {
+        "x": -1550,
+        "z": 1722,
+        "season": 9
+    },
+    "starterisland.webp": {
+        "x": -1719,
+        "z": 1554,
+        "season": 9
+    },
+    "zedboulder.webp": {
+        "x": -1727,
+        "z": 1500,
+        "season": 9
+    },
+    "startertree.webp": {
+        "x": -1775,
+        "z": 1497,
+        "season": 9
+    },
+    "xmastunnel.webp": {
+        "x": -1948,
+        "z": 1545,
+        "season": 9
+    },
+    "doctom.webp": {
+        "x": -1802,
+        "z": 1754,
+        "season": 9
+    },
+    "docwaterwheel.webp": {
+        "x": -1770,
+        "z": 1769,
+        "season": 9
+    },
+    "understarterbridge.webp": {
+        "x": -1716,
+        "z": 1716,
+        "season": 9
+    },
+    "tfcmemo.webp": {
+        "x": -1781,
+        "z": 1537,
+        "season": 9
+    },
+    "dirtcave.webp": {
+        "x": -523,
+        "z": 876,
+        "season": 9
+    },
+    "glasspawner.webp": {
+        "x": -679,
+        "z": 760,
+        "season": 9
+    },
+    "xskull.webp": {
+        "x": -1568,
+        "z": 786,
+        "season": 9
+    },
+    "xskullvillage.webp": {
+        "x": -1579,
+        "z": 875,
+        "season": 9
+    },
+    "falseicerace.webp": {
+        "x": -1685,
+        "z": 959,
+        "season": 9
+    },
+    "grassfalsetower.webp": {
+        "x": -1732,
+        "z": 991,
+        "season": 9
+    },
+    "falsecourtyard.webp": {
+        "x": -1813,
+        "z": 1028,
+        "season": 9
+    },
+    "falsetrain.webp": {
+        "x": -1936,
+        "z": 824,
+        "season": 9
+    },
+    "anvilmanor.webp": {
+        "x": -2233,
+        "z": 1073,
+        "season": 9
+    },
+    "pathintersection.webp": {
+        "x": -2194,
+        "z": 1247,
+        "season": 9
+    },
+    "keep.webp": {
+        "x": -2104,
+        "z": 1266,
+        "season": 9
+    },
+    "mountainentrance.webp": {
+        "x": -2018,
+        "z": 1126,
+        "season": 9
+    },
+    "falsefactory.webp": {
+        "x": -1910,
+        "z": 668,
+        "season": 9
+    },
+    "minigamehouse.webp": {
+        "x": -1747,
+        "z": 280,
+        "season": 9
+    },
+    "minigamebassalt.webp": {
+        "x": -1602,
+        "z": 142,
+        "season": 9
+    },
+    "dunktank.webp": {
+        "x": -1645,
+        "z": 290,
+        "season": 9
+    },
+    "horsecoarse.webp": {
+        "x": -1663,
+        "z": 384,
+        "season": 9
+    },
+    "horsestablecoarse.webp": {
+        "x": -1712,
+        "z": 458,
+        "season": 9
+    },
+    "icefarmbuild.webp": {
+        "x": -1614,
+        "z": 430,
+        "season": 9
+    },
+    "honeyfarms.webp": {
+        "x": -755,
+        "z": 633,
+        "season": 9
+    },
+    "kalley.webp": {
+        "x": 88,
+        "z": 1037,
+        "season": 9
+    },
+    "kship.webp": {
+        "x": 20,
+        "z": 1091,
+        "season": 9
+    },
+    "karena.webp": {
+        "x": 72,
+        "z": 1009,
+        "season": 9
+    },
+    "kiron.webp": {
+        "x": 136,
+        "z": 1041,
+        "season": 9
+    },
+    "krane.webp": {
+        "x": 146,
+        "z": 1082,
+        "season": 9
+    },
+    "bdubsfancy.webp": {
+        "x": -1883,
+        "z": 2027,
+        "season": 9
+    },
+    "logzindust.webp": {
+        "x": -1961,
+        "z": 1923,
+        "season": 9
+    },
+    "zedwings.webp": {
+        "x": -2065,
+        "z": 1952,
+        "season": 9
+    },
+    "impillum.webp": {
+        "x": -2083,
+        "z": 1929,
+        "season": 9
+    },
+    "staffentrancegas.webp": {
+        "x": -2029,
+        "z": 1880,
+        "season": 9
+    },
+    "shoptrash.webp": {
+        "x": -2106,
+        "z": 1873,
+        "season": 9
+    },
+    "armortrim.webp": {
+        "x": -2155,
+        "z": 1930,
+        "season": 9
+    },
+    "tcgtrade.webp": {
+        "x": -2106,
+        "z": 1906,
+        "season": 9
+    },
+    "falsebeebeans.webp": {
+        "x": -2180,
+        "z": 1958,
+        "season": 9
+    },
+    "shoportal.webp": {
+        "x": -2161,
+        "z": 2021,
+        "season": 9
+    },
+    "xgrave.webp": {
+        "x": -2283,
+        "z": 2048,
+        "season": 9
+    },
+    "shoppingtowerr.webp": {
+        "x": -2160,
+        "z": 2084,
+        "season": 9
+    },
+    "hotguytower.webp": {
+        "x": -2004,
+        "z": 1993,
+        "season": 9
+    },
+    "thebutton.webp": {
+        "x": -2053,
+        "z": 2022,
+        "season": 9
+    },
+    "imppump.webp": {
+        "x": -2112,
+        "z": 2041,
+        "season": 9
+    },
+    "cathedrea.webp": {
+        "x": -1344,
+        "z": 1707,
+        "season": 9
+    },
+    "templepath.webp": {
+        "x": -1242,
+        "z": 1628,
+        "season": 9
+    },
+    "zeddpit.webp": {
+        "x": -1302,
+        "z": 1911,
+        "season": 9
+    },
+    "swimmingpooldiving.webp": {
+        "x": -1178,
+        "z": 1912,
+        "season": 9
+    },
+    "zeddhole.webp": {
+        "x": -1499,
+        "z": 2000,
+        "season": 9
+    },
+    "tcgscore.webp": {
+        "x": -1592,
+        "z": 1973,
+        "season": 9
+    },
+    "cathstable.webp": {
+        "x": -1689,
+        "z": 2036,
+        "season": 9
+    },
+    "pumpkinspeedbridge.webp": {
+        "x": -1263,
+        "z": 2134,
+        "season": 9
+    },
+    "mumbobamboahlf.webp": {
+        "x": -1024,
+        "z": 2042,
+        "season": 9
+    },
+    "xsandstonetower.webp": {
+        "x": -1577,
+        "z": 1643,
+        "season": 9
+    },
+    "kermansion.webp": {
+        "x": -1586,
+        "z": 1708,
+        "season": 9
+    },
+    "doctop.webp": {
+        "x": -1518,
+        "z": 2791,
+        "season": 9
+    },
+    "volcbridge.webp": {
+        "x": -1837,
+        "z": 2299,
+        "season": 9
+    },
+    "s9alleyshop.webp": {
+        "x": -2172,
+        "z": 1837,
+        "season": 9
+    },
+    "wyntcastle.webp": {
+        "x": -2322,
+        "z": 1650,
+        "season": 9
+    },
+    "ethos9.webp": {
+        "x": -2363,
+        "z": 3377,
+        "season": 9
+    },
+    "gemoceans9.webp": {
+        "x": 744,
+        "z": 1295,
+        "season": 9
+    },
+    "blueriver.webp": {
+        "x": -1359,
+        "z": 5872,
+        "season": 9
+    },
+    "bluerivermidcourse.webp": {
+        "x": -1236,
+        "z": 6145,
+        "season": 9
+    },
+    "xsculk.webp": {
+        "x": -1852,
+        "z": 2928,
+        "season": 9
+    },
+    "cleofloatingbridge.webp": {
+        "x": -2701,
+        "z": 2175,
+        "season": 9
+    },
+    "cleofloatingbalcony.webp": {
+        "x": -2734,
+        "z": 2192,
+        "season": 9
+    },
+    "flamingjungle.webp": {
+        "x": -1791,
+        "z": 55,
+        "season": 9
+    },
+    "do2map.webp": {
+        "x": -549,
+        "z": 1794,
+        "season": 9
+    },
+    "s9exhibits.webp": {
+        "x": -524,
+        "z": 1581,
+        "season": 9
+    },
+    "chainedwarden.webp": {
+        "x": -585,
+        "z": 1475,
+        "season": 9
+    },
+    "scarlandbackstage.webp": {
+        "x": -1390,
+        "z": 2207,
+        "season": 9
+    },
+    "slelephant.webp": {
+        "x": -1408,
+        "z": 2393,
+        "season": 9
+    },
+    "WorldSpawn.webp": {
+        "x": -456,
+        "z": -119,
+        "season": 10
+    },
+    "MetroEntrance.webp": {
+        "x": -413,
+        "z": -196,
+        "season": 10
+    },
+    "BITrash.webp": {
+        "x": -509,
+        "z": -190,
+        "season": 10
+    },
+    "BIBackroom.webp": {
+        "x": -565,
+        "z": -194,
+        "season": 10
+    },
+    "JoelStat.webp": {
+        "x": -523,
+        "z": -383,
+        "season": 10
+    },
+    "BIAlley1.webp": {
+        "x": -428,
+        "z": -360,
+        "season": 10
+    },
+    "JAlley1.webp": {
+        "x": -382,
+        "z": -478,
+        "season": 10
+    },
+    "JSakura.webp": {
+        "x": -356,
+        "z": -409,
+        "season": 10
+    },
+    "JTree1.webp": {
+        "x": -364,
+        "z": -431,
+        "season": 10
+    },
+    "JMural1.webp": {
+        "x": -460,
+        "z": -462,
+        "season": 10
+    },
+    "VolcanoChestMonster.webp": {
+        "x": -686,
+        "z": -388,
+        "season": 10
+    },
+    "SkizzPen.webp": {
+        "x": -675,
+        "z": -346,
+        "season": 10
+    },
+    "SkizzPyra.webp": {
+        "x": -668,
+        "z": -227,
+        "season": 10
+    },
+    "SkizzBridge.webp": {
+        "x": -695,
+        "z": -242,
+        "season": 10
+    },
+    "GemBeach1.webp": {
+        "x": -728,
+        "z": -214,
+        "season": 10
+    },
+    "GemTree1.webp": {
+        "x": -779,
+        "z": -170,
+        "season": 10
+    },
+    "GemVillage.webp": {
+        "x": -788,
+        "z": -224,
+        "season": 10
+    },
+    "GemPowerLine.webp": {
+        "x": -802,
+        "z": -298,
+        "season": 10
+    },
+    "GemCake.webp": {
+        "x": -846,
+        "z": -257,
+        "season": 10
+    },
+    "GrianFish1.webp": {
+        "x": -825,
+        "z": -381,
+        "season": 10
+    },
+    "GemInt1.webp": {
+        "x": -867,
+        "z": -220,
+        "season": 10
+    },
+    "GemFish1.webp": {
+        "x": -853,
+        "z": -323,
+        "season": 10
+    },
+    "TangoInt1.webp": {
+        "x": -868,
+        "z": -114,
+        "season": 10
+    },
+    "TangoExt1.webp": {
+        "x": -1010,
+        "z": -113,
+        "season": 10
+    },
+    "TangoGear.webp": {
+        "x": -970,
+        "z": -146,
+        "season": 10
+    },
+    "LoglandMush.webp": {
+        "x": -190,
+        "z": -350,
+        "season": 10
+    },
+    "LoglandExt.webp": {
+        "x": -213,
+        "z": -310,
+        "season": 10
+    },
+    "JevCastExt1.webp": {
+        "x": -139,
+        "z": -242,
+        "season": 10
+    },
+    "JevForest1.webp": {
+        "x": -227,
+        "z": -182,
+        "season": 10
+    },
+    "JevForest2.webp": {
+        "x": -265,
+        "z": -196,
+        "season": 10
+    },
+    "JevCoop.webp": {
+        "x": -263,
+        "z": -221,
+        "season": 10
+    },
+    "XDiaPile.webp": {
+        "x": -199,
+        "z": -112,
+        "season": 10
+    },
+    "XFire.webp": {
+        "x": -133,
+        "z": -85,
+        "season": 10
+    },
+    "XInt.webp": {
+        "x": -160,
+        "z": -100,
+        "season": 10
+    },
+    "XExt1.webp": {
+        "x": -48,
+        "z": -104,
+        "season": 10
+    },
+    "XBridge1.webp": {
+        "x": -46,
+        "z": -46,
+        "season": 10
+    },
+    "RenAlien1.webp": {
+        "x": -154,
+        "z": 52,
+        "season": 10
+    },
+    "RenAlien2.webp": {
+        "x": -126,
+        "z": 4,
+        "season": 10
+    },
+    "RenAlien3.webp": {
+        "x": -197,
+        "z": 28,
+        "season": 10
+    },
+    "RubbishNeigh.webp": {
+        "x": -298,
+        "z": 179,
+        "season": 10
+    },
+    "NeighNethP.webp": {
+        "x": -289,
+        "z": 194,
+        "season": 10
+    },
+    "FalseShakc.webp": {
+        "x": -333,
+        "z": 271,
+        "season": 10
+    },
+    "FalsePav1.webp": {
+        "x": -317,
+        "z": 345,
+        "season": 10
+    },
+    "FalsePavE1.webp": {
+        "x": -348,
+        "z": 386,
+        "season": 10
+    },
+    "FalsePavE2.webp": {
+        "x": -277,
+        "z": 389,
+        "season": 10
+    },
+    "FalseRiv1.webp": {
+        "x": -134,
+        "z": 317,
+        "season": 10
+    },
+    "XbEXt1.webp": {
+        "x": -71,
+        "z": 376,
+        "season": 10
+    },
+    "KDOck.webp": {
+        "x": -39,
+        "z": 392,
+        "season": 10
+    },
+    "KBoatLift.webp": {
+        "x": 6,
+        "z": 334,
+        "season": 10
+    },
+    "KAirP.webp": {
+        "x": 92,
+        "z": 366,
+        "season": 10
+    },
+    "KBeez.webp": {
+        "x": 86,
+        "z": 286,
+        "season": 10
+    },
+    "RecordStoreShop.webp": {
+        "x": 153,
+        "z": 126,
+        "season": 10
+    },
+    "GrianEntranceBridge.webp": {
+        "x": -727,
+        "z": -321,
+        "season": 10
+    },
+    "GemBeach2.webp": {
+        "x": -766,
+        "z": -318,
+        "season": 10
+    },
+    "GrianMapHole.webp": {
+        "x": -805,
+        "z": -393,
+        "season": 10
+    },
+    "GrianTreeExt.webp": {
+        "x": -820,
+        "z": -427,
+        "season": 10
+    },
+    "ScarSplitRedwood.webp": {
+        "x": -820,
+        "z": -546,
+        "season": 10
+    },
+    "ScarNatureBridge.webp": {
+        "x": -793,
+        "z": -616,
+        "season": 10
+    },
+    "MMStudio.webp": {
+        "x": -715,
+        "z": -579,
+        "season": 10
+    },
+    "ScarFlyingCarriage.webp": {
+        "x": -693,
+        "z": -617,
+        "season": 10
+    },
+    "ScarBeachTop.webp": {
+        "x": -735,
+        "z": -665,
+        "season": 10
+    },
+    "Scarcreeper.webp": {
+        "x": -770,
+        "z": -687,
+        "season": 10
+    },
+    "BubsBench.webp": {
+        "x": -994,
+        "z": -594,
+        "season": 10
+    },
+    "ScarCreaking.webp": {
+        "x": -1029,
+        "z": -769,
+        "season": 10
+    },
+    "ScarkidFloat.webp": {
+        "x": -891,
+        "z": -834,
+        "season": 10
+    },
+    "ScarZombCit.webp": {
+        "x": -1044,
+        "z": -832,
+        "season": 10
+    },
+    "JojoSolosScar.webp": {
+        "x": -1031,
+        "z": -886,
+        "season": 10
+    },
+    "ScarCamel.webp": {
+        "x": -1003,
+        "z": -908,
+        "season": 10
+    },
+    "ScarPandsX.webp": {
+        "x": -906,
+        "z": -924,
+        "season": 10
+    },
+    "MumboViewH.webp": {
+        "x": -580,
+        "z": -728,
+        "season": 10
+    },
+    "MumboDownVlalley.webp": {
+        "x": -619,
+        "z": -627,
+        "season": 10
+    },
+    "MumboCrowded.webp": {
+        "x": -582,
+        "z": -603,
+        "season": 10
+    },
+    "MumboSurCrate.webp": {
+        "x": -503,
+        "z": -648,
+        "season": 10
+    },
+    "MumboFact.webp": {
+        "x": -515,
+        "z": -665,
+        "season": 10
+    },
+    "MumboPowerSrc.webp": {
+        "x": -578,
+        "z": -588,
+        "season": 10
+    },
+    "BdubsNatureBrid.webp": {
+        "x": -405,
+        "z": -869,
+        "season": 10
+    },
+    "BDubsNatureFall.webp": {
+        "x": -391,
+        "z": -920,
+        "season": 10
+    },
+    "BdubsNatureBench.webp": {
+        "x": -434,
+        "z": -947,
+        "season": 10
+    },
+    "BdubsRocksView.webp": {
+        "x": -379,
+        "z": -1086,
+        "season": 10
+    },
+    "BdubsLoomingTrea.webp": {
+        "x": -448,
+        "z": -1116,
+        "season": 10
+    },
+    "BdubsTrulyFish.webp": {
+        "x": -507,
+        "z": -1017,
+        "season": 10
+    },
+    "TangoSteamStarter.webp": {
+        "x": -721,
+        "z": -47,
+        "season": 10
+    },
+    "PearlSolarBoat.webp": {
+        "x": -738,
+        "z": 30,
+        "season": 10
+    },
+    "PearlSolarFightBall.webp": {
+        "x": -665,
+        "z": 64,
+        "season": 10
+    },
+    "PearlViewCub.webp": {
+        "x": -695,
+        "z": 106,
+        "season": 10
+    },
+    "PearlSoalrRoof.webp": {
+        "x": -625,
+        "z": 40,
+        "season": 10
+    },
+    "PearlSolarStarterA.webp": {
+        "x": -628,
+        "z": -16,
+        "season": 10
+    },
+    "PearlSoalrStarterField.webp": {
+        "x": -621,
+        "z": -76,
+        "season": 10
+    },
+    "PearlSoalrSwheat.webp": {
+        "x": -547,
+        "z": -39,
+        "season": 10
+    },
+    "PearlMailTruck.webp": {
+        "x": -547,
+        "z": -90,
+        "season": 10
+    },
+    "PearlMailFront.webp": {
+        "x": -526,
+        "z": -93,
+        "season": 10
+    },
+    "PLeavesearlFall.webp": {
+        "x": -540,
+        "z": 55,
+        "season": 10
+    },
+    "CubSCulk1.webp": {
+        "x": -677,
+        "z": 175,
+        "season": 10
+    },
+    "CybSculker2.webp": {
+        "x": -797,
+        "z": 237,
+        "season": 10
+    },
+    "CleoMonstArm.webp": {
+        "x": -606,
+        "z": 266,
+        "season": 10
+    },
+    "CLeoStoreRo.webp": {
+        "x": -524,
+        "z": 295,
+        "season": 10
+    },
+    "CleoHouseScene.webp": {
+        "x": -499,
+        "z": 265,
+        "season": 10
+    },
+    "EthoStables1.webp": {
+        "x": -830,
+        "z": 58,
+        "season": 10
+    },
+    "EthoSakura.webp": {
+        "x": -889,
+        "z": 52,
+        "season": 10
+    },
+    "EthoHouseSide.webp": {
+        "x": -878,
+        "z": 78,
+        "season": 10
+    },
+    "TangGhasta.webp": {
+        "x": -855,
+        "z": -89,
+        "season": 10
+    },
+    "FalseBigBTree.webp": {
+        "x": -254,
+        "z": 374,
+        "season": 10
+    },
+    "FalseLandingHe.webp": {
+        "x": -246,
+        "z": 433,
+        "season": 10
+    },
+    "MiniGhastGames.webp": {
+        "x": -286,
+        "z": 692,
+        "season": 10
+    },
+    "MaceRaceX.webp": {
+        "x": -366,
+        "z": 753,
+        "season": 10
+    },
+    "MiniGameDisEnt.webp": {
+        "x": -531,
+        "z": 690,
+        "season": 10
+    },
+    "CleoTreeStar.webp": {
+        "x": -450,
+        "z": 319,
+        "season": 10
+    },
+    "XBFarmHo.webp": {
+        "x": -164,
+        "z": 211,
+        "season": 10
+    },
+    "XBGoatFarH.webp": {
+        "x": -82,
+        "z": 158,
+        "season": 10
+    },
+    "XBFarmFieldH.webp": {
+        "x": -193,
+        "z": 290,
+        "season": 10
+    },
+    "10Gazebo.webp": {
+        "x": -57,
+        "z": 294,
+        "season": 10
+    },
+    "PoeBackyardC.webp": {
+        "x": 12,
+        "z": 201,
+        "season": 10
+    },
+    "TallClaimsCourt.webp": {
+        "x": 85,
+        "z": 131,
+        "season": 10
+    },
+    "GlassCollect.webp": {
+        "x": 134,
+        "z": 170,
+        "season": 10
+    },
+    "NyliShop.webp": {
+        "x": 173,
+        "z": 173,
+        "season": 10
+    },
+    "PearlMonstePor.webp": {
+        "x": 197,
+        "z": 206,
+        "season": 10
+    },
+    "KittycatCafeBook.webp": {
+        "x": 204,
+        "z": 167,
+        "season": 10
+    },
+    "BlackstoneShopArea.webp": {
+        "x": 274,
+        "z": 131,
+        "season": 10
+    },
+    "DiaShovelSandGoat.webp": {
+        "x": 349,
+        "z": 169,
+        "season": 10
+    },
+    "WelsCastTree.webp": {
+        "x": 228,
+        "z": 0,
+        "season": 10
+    },
+    "WelsCastTower.webp": {
+        "x": 194,
+        "z": 17,
+        "season": 10
+    },
+    "WelsBackPatioCast.webp": {
+        "x": 164,
+        "z": -19,
+        "season": 10
+    },
+    "HypnoBridgeCherryQu.webp": {
+        "x": 97,
+        "z": -40,
+        "season": 10
+    },
+    "OriginalSpawnLavaPoool.webp": {
+        "x": 2,
+        "z": 0,
+        "season": 10
+    },
+    "GoatSkyBlock.webp": {
+        "x": 244,
+        "z": -301,
+        "season": 10
+    },
+    "XmasTreeCarpet.webp": {
+        "x": 397,
+        "z": -55,
+        "season": 10
+    },
+    "ScarSandImpera.webp": {
+        "x": 387,
+        "z": 79,
+        "season": 10
+    },
+    "PearlFlowShop.webp": {
+        "x": 561,
+        "z": 127,
+        "season": 10
+    },
+    "PermitMasterVhair.webp": {
+        "x": 549,
+        "z": 214,
+        "season": 10
+    },
+    "PermitOfficeInt.webp": {
+        "x": 500,
+        "z": 217,
+        "season": 10
+    },
+    "TerraCottaShopSign.webp": {
+        "x": 471,
+        "z": 355,
+        "season": 10
+    },
+    "XCopperShopp.webp": {
+        "x": 507,
+        "z": 481,
+        "season": 10
+    },
+    "RavFrogRush.webp": {
+        "x": 341,
+        "z": 430,
+        "season": 10
+    },
+    "RavRushRoof.webp": {
+        "x": 293,
+        "z": 435,
+        "season": 10
+    },
+    "TangRedstonExtS.webp": {
+        "x": 287,
+        "z": 466,
+        "season": 10
+    },
+    "TangoRedstoneBox.webp": {
+        "x": 253,
+        "z": 480,
+        "season": 10
+    },
+    "TangoMesedMush.webp": {
+        "x": 189,
+        "z": 430,
+        "season": 10
+    },
+    "RenSherdShop.webp": {
+        "x": 155,
+        "z": 382,
+        "season": 10
+    },
+    "ShopAlleyBoneTruck.webp": {
+        "x": 153,
+        "z": 300,
+        "season": 10
+    },
+    "IronShoportest.webp": {
+        "x": 138,
+        "z": 252,
+        "season": 10
+    },
+    "CubHornShopGoat.webp": {
+        "x": 127,
+        "z": 213,
+        "season": 10
+    },
+    "CubFireworkInside.webp": {
+        "x": 201,
+        "z": 261,
+        "season": 10
+    }
+}

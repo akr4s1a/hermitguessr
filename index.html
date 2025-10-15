@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hermit Guessr</title>
+    <meta name="title" content="Hermit Guessr" property="og:title" />
+    <meta name="description" content="Hermitguessr includes seasons 4 though 10 and a leaderboard!"
+        property="og:description" />
+    <meta content="https://hermitguessr.ca" property="og:url" />
+    <meta content="https://panos.hermitguessr.ca/S10.webp" property="og:image" />
+    <meta content="#28F818" data-react-helmet="true" name="theme-color" />
+
+    <script src="https://res.hermitguessr.ca/confetti.browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pannellum/2.5.6/pannellum.js"
+        integrity="sha512-EmZuy6vd0ns9wP+3l1hETKq/vNGELFRuLfazPnKKBbDpgZL0sZ7qyao5KgVbGJKOWlAFPNn6G9naB/8WnKN43Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pannellum/2.5.6/pannellum.css"
+        integrity="sha512-UoT/Ca6+2kRekuB1IDZgwtDt0ZUfsweWmyNhMqhG4hpnf7sFnhrLrO0zHJr2vFp7eZEvJ3FN58dhVx+YMJMt2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/streetview.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Nunito:wght@300&display=swap" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://res.hermitguessr.ca/Leaflet/baseControl.js"></script>
+    <script src="https://res.hermitguessr.ca/Leaflet/baseHandler.js"></script>
+    <script src="https://res.hermitguessr.ca/Leaflet/mouseControl.js"></script>
+    <script src="./js/Leaflet/mapcrafterui.js"></script>
+    <script src="./js/Leaflet/mapConfig.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+        integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        var Mapcrafter = new MapcrafterUI(CONFIG);
+
+        function init() {
+            Mapcrafter.init();
+
+            Mapcrafter.addControl(new MousePosControl(), "bottomleft", 1);
+
+            var markers = [];
+            if (typeof MAPCRAFTER_MARKERS !== "undefined")
+                for (var i = 0; i < MAPCRAFTER_MARKERS.length; i++)
+                    markers.push(MAPCRAFTER_MARKERS[i]);
+            // if (markers.length > 0)
+            //     Mapcrafter.addControl(new MarkerControl(markers), "topright", 2);
+
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="d-none" id="image-format">webp</div>
+    <audio id="clickA" src="./sounds/click.ogg" preload="auto"></audio>
+    <audio id="celebrationsA" src="./sounds/celebration.ogg" preload="auto"></audio>
+    <audio id="disagreeA" src="https://res.hermitguessr.ca/Villager_deny2.ogg" preload="auto"></audio>
+    <audio id="agreeA" src="https://res.hermitguessr.ca/Villager_accept2.ogg" preload="auto"></audio>
+    <audio id="plopA" src="./sounds/plop.ogg" preload="auto"></audio>
+    <div id="alert-header" class="alert alert-info text alert-dismissible fade show" role="alert">
+        New update, Please report bugs!
+        <a href="https://discord.gg/8ydFhEV7Cq" class="float-end text-black ms-3 me-3">Discord</a>
+        <a href="#" data-bs-toggle="modal" class="float-end text-black ms-3 me-3"
+            data-bs-target="#privacyPolicyModal">
+            Privacy Policy
+        </a>
+        <button id="close-alert-header" type="button" class="btn-close" data-bs-dismiss="alert"
+            aria-label="Close"></button>
+    </div>
+    <div class="modal fade" id="privacyPolicyModal" tabindex="-1" aria-labelledby="privacyPolicyModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="privacyPolicyModalLabel">Privacy Policy</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li> There are no cookies or analytics on this site. </li>
+                        <li> Your username is saved in local storage for your convenience </li>
+                        <li> I DO NOT collect any personal data such as IP, browser info, or location </li>
+                        <li> Your game results (guesses, time) are stored for debugging </li>
+                        <li> Your username and score are stored for the leaderboard </li>
+                        <li> If you would like your data removed from the leaderboard, please contact akr4s1a@gmail.com
+                        </li>
+                        <li><a href="https://twitter.com/Akr4s1a/status/1770126115224359096" class="text-black">For
+                                examples of what is stored, see here</a></li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="issueModal" tabindex="-1" aria-labelledby="issueModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="issueModalLabel">Report Issue</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <p> For more effective troubleshooting, I've closed the report issues option on the webpage and ask you join the <a href="https://discord.gg/8ydFhEV7Cq" target="_blank" class="text-info">Discord</a> (opens in new tab) for support</p>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary disabled" id="submitIssue"
+                        data-bs-dismiss="modal">Submit</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="info">
+        Game code: <span id="game-code">Pending</span><br>
+        User code: <span id="user-code">Pending</span><br>
+        Game Version: <span id="game-version">Kainite</span>
+    </div>
+    <div class="toast-container top-0 end-0" id="toast-container">
+        <div id="banned" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Banned</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                This username is banned from submitting times to the leaderboard. Please contact akr4s1a on discord.
+            </div>
+        </div>
+    </div>
+    <div id="title" class="d-flex align-items-end justify-content-center"><img id='logo' src=/images/hglogo.png></img><p>by Akr4s1a</p></div>
+    <div id="btns" style="text-align: center">
+        <button class="btn btn-success" id="startBtn" disabled>Start Game</button>
+        <button class="btn btn-success d-none" id="mpBtn">Multiplayer (Alpha)</button>
+        <a class="btn btn-primary" href="/leaderboard">Leaderboard</a>
+        <div class="dropdown d-inline-block" id="season_dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <span class="text-white">Select Season</span>
+            </button>
+            <ul class="dropdown-menu" id="season_menu">
+                <li>
+                    <a class="dropdown-item" href="#">
+                        <div class="form-check">
+                            <input type="checkbox" id="season_10" value="10" checked>
+                            <label for="season_10">Season 10</label>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="#">
+                        <div class="form-check">
+                            <input type="checkbox" id="season_9" value="9" >
+                            <label for="season_9">Season 9</label>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="#">
+                        <div class="form-check">
+                            <input type="checkbox" id="season_8" value="8">
+                            <label for="season_8">Season 8</label>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="#">
+                        <div class="form-check">
+                            <input type="checkbox" id="season_7" value="7">
+                            <label for="season_7">Season 7</label>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="#">
+                        <div class="form-check">
+                            <input type="checkbox" id="season_6" value="6">
+                            <label for="season_6">Season 6</label>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="#">
+                        <div class="form-check">
+                            <input type="checkbox" id="season_5" value="5">
+                            <label for="season_5">Season 5</label>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="#">
+                        <div class="form-check">
+                            <input type="checkbox" id="season_4" value="4">
+                            <label for="season_4">Season 4</label>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <button class="btn btn-secondary" id="audioBtn">Sounds are on</button>
+        <button class="btn btn-danger d-none" id="reportBtn" data-bs-target="#issueModal" data-bs-toggle="modal">Report Issue</button>
+        <button class="btn btn-primary d-none ms-5" id="submitBtn">Submit Guess</button>
+    </div>
+    <div>
+        <p class="text-center text-white" id='username-label'>Your Username (Optional, required for leaderboard)</label>
+        <div class="input-group mx-auto text-center w-25 mt-3">
+            <input type="name" class="form-control" id="username" maxlength="10" placeholder="Max Length 10 characters"
+                data-bs-toggle='tooltip' title="Please do not submit scores under different usernames">
+            <button type="button" class="btn btn-primary text-center" id="set-name-btn" data-bs-toggle='tooltip'
+                title="Please do not submit scores under different usernames">Set Name</button>
+        </div>
+    </div>
+<div id="scores" class="container-fluid px-3">
+  <div id="scoreBar" class="d-flex align-items-center justify-content-between w-100">
+    
+    <!-- Left side: score + clock -->
+    <div class="d-flex flex-column align-items-start">
+      <h2 id="score" class="mb-0">Score: 0</h2>
+      <span id="clock">00:00</span>
+    </div>
+
+    <!-- Right side: fixed 5 score slots -->
+    <div id="scoreList" class="d-flex align-items-center justify-content-end">
+      <div class="scoreListItem mx-1">_</div>
+      <div class="scoreListItem mx-1">_</div>
+      <div class="scoreListItem mx-1">_</div>
+      <div class="scoreListItem mx-1">_</div>
+      <div class="scoreListItem mx-1">_</div>
+    </div>
+  </div>
+</div>
+
+
+
+    
+    <div id="info-toast" class="toast align-items-center text-bg-light border-0 position-fixed top-25 start-50 translate-middle" 
+         role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="3000" style="z-index: 1080;">
+      <div class="d-flex">
+        <div id="info-toast-body" class="toast-body text-center w-100">
+    
+        </div>
+      </div>
+    </div>
+    </div>
+    <div id="game">
+        <div id="panorama" class="d-none"></div>
+        <div id="mcmap" class="d-none"></div>
+    </div>
+    <div id="footer">
+    </div>
+    <script type="module" src="js/modules/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
+        integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+
+</html>

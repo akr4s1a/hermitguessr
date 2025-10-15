@@ -29,7 +29,7 @@ fetch("/leaderboard_data")
                     leaderboards.allSeasons[username] = { score, season };
                 }
             }
-            if (/^\D*\d\D*\d\D*$/.test(season)) {
+            if (/^\D*\d\D+\d\D*$/.test(season)) {
                 if (!leaderboards.mixed[username] || leaderboards.mixed[username].score < score) {
                     leaderboards.mixed[username] = { score, season };
                 }

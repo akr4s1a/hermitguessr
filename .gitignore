@@ -9,3 +9,4 @@ localServerConfig.json
 **/._.DS_Store
 .vscode
 banned.json
+public/images/tmp/

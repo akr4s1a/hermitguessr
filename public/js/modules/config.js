@@ -1,6 +1,6 @@
 export const HGCONFIG = {
     WS_URL: "wss://ws.hermitguessr.ca",
-    PANO_BASE_URL: "https://panos.hermitguessr.ca/panos",
+    PANO_BASE_URL: "https://hermitguessr.ca/images/tmp",
     KEEP_ALIVE_INTERVAL: 4000,
     MAX_GUESSES: 5,
     CONFETTI_DURATION: 5000,

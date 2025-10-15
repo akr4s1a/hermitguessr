@@ -18,7 +18,6 @@ function handleSocketMessage(event) {
 
     if (data.type === 'admin_dash'){
 
-        console.log(data.reports);
         updateStats(data);
         updateGameTable(data.game_list);
         updateInProgressGames(data.in_progress);
@@ -92,7 +91,6 @@ function updateInProgressGames(games) {
     container.innerHTML = "";
 
     games.forEach(game => {
-        console.log(game);
 
         let seasonKeys = Object.keys(game.acceptable[0]).filter(key => game.acceptable[0][key]);
         let seasonText = `Season${seasonKeys.length > 1 ? "s" : ""} ${joinWithAnd(seasonKeys)}`;

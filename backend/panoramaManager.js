@@ -1,8 +1,14 @@
+import fs from 'fs'
+import path from 'path'
+import GameUtils from './gameUtils.js'
+
 export default class PanoramaManager {
     constructor(panos) {
-        this.panos = panos;
+        this.originPanos = panos;
+        this.panos = {}
         this.userOptions = new Map();
         this.currentPano = new Map();
+        this.shuffle(this.originPanos)
     }
 
     initializeUserPanos(userCode, acceptable) {
@@ -11,7 +17,34 @@ export default class PanoramaManager {
         );
         this.userOptions.set(userCode, options);
     }
+    shuffle(panos){
+       let tempDir = path.join('public/images/tmp')
+        if (fs.existsSync(tempDir)){
+            let files = fs.readdirSync(tempDir)
+            files.forEach(file => {
+                let tempFile = path.join(tempDir,file)
+                if (fs.statSync(tempFile).isDirectory()){
+                    fs.rmSync(tempFile, { recursive: true, force: true })
+                }
+            });
+        } else {
+            fs.mkdirSync(tempDir)
+        }
 
+        for (let panoFileName in panos){
+            let panoData = panos[panoFileName];
+            let newPath = path.join(tempDir, `season${panoData.season}`)
+            if (!fs.existsSync(newPath)){ fs.mkdirSync(newPath, { recursive: true } )}
+            let originalPath = path.join('public','images','panos',`season${panoData.season}`,panoFileName)
+            let randomName = GameUtils.generateCode() + '.webp'
+            let symlinkPath = path.join(newPath, `${randomName}`);
+
+            let relativeTarget = path.relative(path.dirname(symlinkPath), originalPath);
+            fs.symlinkSync(relativeTarget, symlinkPath);
+            this.panos[randomName] = panoData;
+        }
+        console.log("Panoramas randomised")
+    }
     getRandomPano(userCode, acceptable) {
         let options = this.userOptions.get(userCode) || [];
 

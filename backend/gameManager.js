@@ -33,7 +33,6 @@ export default class GameManager {
         ws.locked = false;
 
         if (await this.banManager.isIPBanned(ws.clientID)) {
-            console.log("BANNED IP:", ws.clientID);
             ws.send(JSON.stringify({ type: "hard_banned" }));
             await this.banManager.logBan({ ip: ws.clientID });
             setTimeout(() => ws.terminate(), 1000);

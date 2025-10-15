@@ -1,0 +1,16 @@
+442 -16 TangoHell
+84 -120 NetherExpansePortal
+-226 47 WelsCastle
+131 448 ScarCity
+1176 -1347 MumboHexBase
+-802 415 SkyCityGarden
+465 -1019 GamesDistrict
+984 -895 Rubix
+-300 -1841 RainbowCastle
+-1042 -760 BlackHole
+-986 -660 XVolc
+-644 -765 FalseMarket
+-456 -768 FalseScaryMush
+-4213 -3336 TreeBubble
+-4302 -3455 NHOArena
+-4319 -3558 NHOArea

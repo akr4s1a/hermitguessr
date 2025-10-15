@@ -16,7 +16,6 @@ export default class AuthHandler {
         try {
             let row = await this.gameManager.dbManager.adminLogin(username);
             if (!row) {
-                console.log('User not found');
                 return false;
             }
 
@@ -31,11 +30,9 @@ export default class AuthHandler {
                 this.secret,
                 { expiresIn: jwt_expires }
             )
-                console.log(`Admin ${username} logged in`)
                 return token;
                 
         } catch (err) {
-            console.error('Login error:', err);
             return false;
         }
     }
@@ -44,10 +41,8 @@ export default class AuthHandler {
         try {
             let hash = await bcrypt.hash(password, salt_rounds);
             await this.gameManager.dbManager.adminSignup(username, hash);
-            console.log(`Created admin ${username}`);
             return true;
         } catch (err) {
-            console.error('Signup error:', err);
             return false;
         }
     }

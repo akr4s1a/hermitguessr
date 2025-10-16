@@ -60,7 +60,6 @@ function authMiddleware(req, res, next) {
   }
 }
 app.post('/admin/login', async (req, res) => {
-  console.log(req.body)
   let { username, password } = req.body;
 
   let jwtToken = await authHandler.handleLogin(username, password);

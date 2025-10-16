@@ -1,4 +1,4 @@
-import { HGCONFIG } from "../config";
+import { HGCONFIG } from "../config.js";
 let socket;
 
 document.addEventListener("DOMContentLoaded", () => {

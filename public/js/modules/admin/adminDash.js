@@ -6,39 +6,49 @@ document.addEventListener("DOMContentLoaded", () => {
 
     socket.onopen = () => {
         socket.addEventListener("message", handleSocketMessage);
-        socket.send(JSON.stringify({
-            "type": 'admin_dash',
-            "token": localStorage.getItem('jwt')
-        }))
+        requestDashData(socket)
     };
 });
 
+let searchBar = document.querySelector('.search-input')
+searchBar.addEventListener('keyup', () => {
+    search(searchBar.value)
+});
+function requestDashData(socket){
+            socket.send(JSON.stringify({
+            "type": 'admin_dash',
+            "token": localStorage.getItem('jwt')
+        }))
+}
 function handleSocketMessage(event) {
     let data = JSON.parse(event.data);
 
-    if (data.type === 'admin_dash'){
+    if (data.type === 'admin_dash') {
 
         updateStats(data);
         updateGameTable(data.game_list);
         updateInProgressGames(data.in_progress);
     }
-    if (data.type === 'refresh'){
+    if (data.type === 'refresh') {
         updateToken()
     }
 }
-function updateToken(){
-    let response = fetch('/admin/refresh', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            credentials: 'include'
-        });
-
+function updateToken() {
+    fetch('/admin/refresh', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'include'
+    }).then((response) => {
         if (response.ok) {
-            let data = response.json();
-            localStorage.setItem('jwt', data.token);
+            response.json().then((data) => {
+                localStorage.setItem('jwt', data.token);
+                requestDashData(socket);
+            })
+
         } else {
             alert('Login failed');
         }
+    })
 }
 function updateStats(data) {
     document.getElementById("total-games").innerHTML = data.total_games + 4682;
@@ -75,8 +85,8 @@ function updateGameTable(gameList) {
             if (i === 1) cell.style.fontWeight = 'bold';
         });
     });
-    table.addEventListener('click',(e) => {
-        if (e.target.classList.contains('btn-success')){
+    table.addEventListener('click', (e) => {
+        if (e.target.classList.contains('btn-success')) {
             socket.send(JSON.stringify({
                 'type': 'admin_approve',
                 'gameCode': e.target.closest('tr').children[8].innerHTML,
@@ -92,7 +102,7 @@ function updateInProgressGames(games) {
 
     games.forEach(game => {
 
-        let seasonKeys = Object.keys(game.acceptable[0]).filter(key => game.acceptable[0][key]);
+        let seasonKeys = Object.keys(game.acceptable?.[0] ?? {}).filter(key => game.acceptable?.[0]?.[key]);
         let seasonText = `Season${seasonKeys.length > 1 ? "s" : ""} ${joinWithAnd(seasonKeys)}`;
 
         let panos = Object.values(game.panos)
@@ -147,4 +157,15 @@ function formatDate(dateString) {
 
 function joinWithAnd(arr) {
     return arr.join(", ").replace(/, ([^,]*)$/, ' and $1');
+}
+
+function search(text) {
+    let rows = document.querySelectorAll('tr')
+    for (let i = 1; i < rows.length; i++) {
+        if (!rows[i].innerHTML.includes(text)) {
+            rows[i].classList.add('d-none')
+        } else {
+            rows[i].classList.remove('d-none')
+        }
+    }
 }

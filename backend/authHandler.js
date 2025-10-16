@@ -2,7 +2,6 @@ import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken'
 import localServerConfig from '../localServerConfig.json' with { type: 'json'};
 const salt_rounds = 10;
-const jwt_expires = localServerConfig.JWT_AGE
 
 
 
@@ -28,7 +27,7 @@ export default class AuthHandler {
             let token = jwt.sign(
                 { username },
                 this.secret,
-                { expiresIn: jwt_expires }
+                { expiresIn: localServerConfig.JWT_AGE.toString() }
             )
                 return token;
                 

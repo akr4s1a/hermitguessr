@@ -25,38 +25,34 @@ function authMiddleware(req, res, next) {
   let accessToken = req.cookies.access_token;
   let refreshToken = req.cookies.refresh_token;
 
-  if (!accessToken && !refreshToken) {
-    return res.redirect('/admin');
-  }
+  if (!accessToken && !refreshToken) return res.redirect('/admin');
 
   try {
     let verify = jwt.verify(accessToken, localServerConfig.JWT_SECRET);
     req.user = verify;
     return next();
   } catch (err) {
-    if (err.name === 'TokenExpiredError' && refreshToken) {
-      try {
-        let verifyRefresh = jwt.verify(refreshToken, localServerConfig.JWT_REFRESH_SECRET);
-        let newAccessToken = jwt.sign(
-          { username: verifyRefresh.username },
-          localServerConfig.JWT_SECRET,
-          { expiresIn: '15m' }
-        );
+    if (!refreshToken) return res.redirect('/admin');
+    try {
+      let verifyRefresh = jwt.verify(refreshToken, localServerConfig.JWT_REFRESH_SECRET);
+      let newAccessToken = jwt.sign(
+        { username: verifyRefresh.username },
+        localServerConfig.JWT_SECRET,
+        { expiresIn: localServerConfig.JWT_AGE.toString() }
+      );
 
-        res.cookie('access_token', newAccessToken, {
-          httpOnly: true,
-          secure: localServerConfig.SECURE_ENV,
-          sameSite: 'strict',
-          maxAge: localServerConfig.JWT_AGE
-        });
+      res.cookie('access_token', newAccessToken, {
+        httpOnly: true,
+        secure: localServerConfig.SECURE_ENV,
+        sameSite: 'strict',
+        maxAge: localServerConfig.JWT_AGE
+      });
 
-        req.user = verifyRefresh;
-        return next();
-      } catch (refreshErr) {
-        return res.redirect('/admin');
-      }
+      req.user = verifyRefresh;
+      return next();
+    } catch (refreshErr) {
+      return res.redirect('/admin');
     }
-    return res.redirect('/admin');
   }
 }
 app.post('/admin/login', async (req, res) => {
@@ -67,7 +63,8 @@ app.post('/admin/login', async (req, res) => {
     return res.redirect('/admin')
   }
 
-  let accessToken = jwt.sign({ username }, localServerConfig.JWT_SECRET, { expiresIn: '60m' });
+  let accessToken = jwt.sign({ username }, localServerConfig.JWT_SECRET, { expiresIn: localServerConfig.JWT_AGE.toString() });
+  let refreshToken = jwt.sign({ username }, localServerConfig.JWT_REFRESH_SECRET, { expiresIn: '30d' })
 
   res.cookie('access_token', accessToken, {
     httpOnly: true,
@@ -75,6 +72,12 @@ app.post('/admin/login', async (req, res) => {
     sameSite: 'strict',
     maxAge: localServerConfig.JWT_AGE
   });
+  res.cookie('refresh_token', refreshToken, {
+    httpOnly: true,
+    secure: localServerConfig.SECURE_ENV,
+    sameSite: 'strict',
+    maxAge: localServerConfig.JWT_AGE * 17280
+  })
 
   return res.json({ type: 'jwt', 'token': accessToken });
 });
@@ -90,17 +93,18 @@ app.post('/admin/refresh', async (req, res) => {
     let newAccessToken = jwt.sign(
       { username: verify.username },
       localServerConfig.JWT_SECRET,
-      { expiresIn: '15m' }
+      { expiresIn: localServerConfig.JWT_AGE.toString() }
     );
 
     res.cookie('access_token', newAccessToken, {
       httpOnly: true,
       secure: localServerConfig.SECURE_ENV,
       sameSite: 'strict',
-      maxAge: JWT_AGE
+      maxAge: localServerConfig.JWT_AGE
     });
     return res.json({ type: 'jwt', token: newAccessToken });
   } catch (err) {
+    console.log(err)
     return res.redirect('/admin')
   }
 });

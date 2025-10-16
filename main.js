@@ -19,6 +19,7 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 app.use(cookieParser());
+app.use(express.json())
 
 function authMiddleware(req, res, next) {
   let accessToken = req.cookies.access_token;
@@ -59,6 +60,7 @@ function authMiddleware(req, res, next) {
   }
 }
 app.post('/admin/login', async (req, res) => {
+  console.log(req.body)
   let { username, password } = req.body;
 
   let jwtToken = await authHandler.handleLogin(username, password);

@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Deploy to Production Server
+      - name: Deploy to staging
         env:
           SSH_PRIVATE_KEY: ${{ secrets.STAGING_KEY }}
           HOST: staging.hermitguessr.ca

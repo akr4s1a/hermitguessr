@@ -10,3 +10,4 @@ localServerConfig.json
 .vscode
 banned.json
 public/images/tmp/
+public/js/modules/config.js

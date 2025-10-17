@@ -12,7 +12,7 @@ import UAParser from "ua-parser-js";
 import AuthHandler from "./backend/authHandler.js";
 import jwt from 'jsonwebtoken'
 import cookieParser from 'cookie-parser';
-
+import fs from 'fs/promises'
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -183,4 +183,18 @@ server.listen(localServerConfig.port, "0.0.0.0", () => {
 
 wss.on("connection", (ws) => {
   gameManager.proc(ws);
+});
+Promise.all([
+  fs.unlink('SHUTDOWN').catch(() => { }),
+  fs.unlink('RESTART').catch(() => { })
+]).then(() => {
+  let flag = setInterval(() => {
+    fs.access('SHUTDOWN').then(() => {
+      gameManager.signalShutdown()
+    }).catch(()=>{});
+    fs.access('RESTART').then(() => {
+      gameManager.signalDelayShutdown()
+      clearInterval(flag);
+    }).catch(()=>{});
+  }, 1000)
 });

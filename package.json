@@ -2,15 +2,12 @@
   "dependencies": {
     "bad-words": "^3.0.4",
     "bcrypt": "^6.0.0",
-    "better-sqlite3": "^7.5.0",
+    "sqlite3": "^5.1.7",
     "cookie-parser": "^1.4.7",
-    "express": "^4.17.3",
+    "express": "^4.21.2",
     "jsonwebtoken": "^9.0.2",
-    "multer": "^1.4.5-lts.1",
-    "sqlite3": "^5.1.6",
-    "twitter": "^1.7.1",
     "ua-parser-js": "^1.0.37",
-    "ws": "^8.5.0"
+    "ws": "^8.18.3"
   },
   "type": "module"
 }

@@ -1,0 +1,26 @@
+name: Deploy to Production
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to Production Server
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.PROD_KEY }}
+          HOST: hermitguessr.ca
+          USER: ubuntu
+        run: |
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh -o StrictHostKeyChecking=no $USER@$HOST "
+            cd /home/ubuntu/hcgeo
+            git pull
+            touch RESTART
+          "

@@ -13,7 +13,7 @@ jobs:
       - name: Deploy to Production Server
         env:
           SSH_PRIVATE_KEY: ${{ secrets.PROD_KEY }}
-          HOST: hermitguessr.ca
+          HOST: ${{ secrets.PROD_IP }}
           USER: ubuntu
         run: |
           mkdir -p ~/.ssh

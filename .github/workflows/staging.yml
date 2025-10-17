@@ -13,7 +13,7 @@ jobs:
       - name: Deploy to staging
         env:
           SSH_PRIVATE_KEY: ${{ secrets.STAGING_KEY }}
-          HOST: staging.hermitguessr.ca
+          HOST: ${{ secrets.STAGING_IP }}
           USER: ubuntu
         run: |
           mkdir -p ~/.ssh

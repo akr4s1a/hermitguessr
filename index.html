@@ -77,10 +77,8 @@
     <audio id="agreeA" src="https://res.hermitguessr.ca/Villager_accept2.ogg" preload="auto"></audio>
     <audio id="plopA" src="./sounds/plop.ogg" preload="auto"></audio>
     <div id="alert-header" class="alert alert-info text alert-dismissible fade show" role="alert">
-        New update, Please report bugs!
-        <a href="https://discord.gg/8ydFhEV7Cq" class="float-end text-black ms-3 me-3">Discord</a>
-        <a href="#" data-bs-toggle="modal" class="float-end text-black ms-3 me-3"
-            data-bs-target="#privacyPolicyModal">
+        <a href="https://hc-tcg.online" class="text-black" target="_blank" rel="noopener noreferrer" >Check out HC-TCG Online!</a>
+        <a href="#" data-bs-toggle="modal" class="float-end text-black ms-3 me-3" data-bs-target="#privacyPolicyModal">
             Privacy Policy
         </a>
         <button id="close-alert-header" type="button" class="btn-close" data-bs-dismiss="alert"
@@ -123,7 +121,9 @@
                 <div class="modal-body">
                     <form>
                         <div class="mb-3">
-                            <p> For more effective troubleshooting, I've closed the report issues option on the webpage and ask you join the <a href="https://discord.gg/8ydFhEV7Cq" target="_blank" class="text-info">Discord</a> (opens in new tab) for support</p>
+                            <p> For more effective troubleshooting, I've closed the report issues option on the webpage
+                                and ask you join the <a href="https://discord.gg/8ydFhEV7Cq" target="_blank"
+                                    class="text-info">Discord</a> (opens in new tab) for support</p>
                         </div>
                     </form>
                 </div>
@@ -151,7 +151,10 @@
             </div>
         </div>
     </div>
-    <div id="title" class="d-flex align-items-end justify-content-center"><img id='logo' src=/images/hglogo.png></img><p>by Akr4s1a</p></div>
+    <div id="title" class="d-flex align-items-end justify-content-center">
+        <img id='logo' src=/images/hglogo.png></img>
+        <p>by Akr4s1a</p>
+    </div>
     <div id="btns" style="text-align: center">
         <button class="btn btn-success" id="startBtn" disabled>Start Game</button>
         <button class="btn btn-success d-none" id="mpBtn">Multiplayer (Alpha)</button>
@@ -173,7 +176,7 @@
                 <li>
                     <a class="dropdown-item" href="#">
                         <div class="form-check">
-                            <input type="checkbox" id="season_9" value="9" >
+                            <input type="checkbox" id="season_9" value="9">
                             <label for="season_9">Season 9</label>
                         </div>
                     </a>
@@ -233,44 +236,60 @@
                 title="Please do not submit scores under different usernames">Set Name</button>
         </div>
     </div>
-<div id="scores" class="container-fluid px-3">
-  <div id="scoreBar" class="d-flex align-items-center justify-content-between w-100">
-    
-    <!-- Left side: score + clock -->
-    <div class="d-flex flex-column align-items-start">
-      <h2 id="score" class="mb-0">Score: 0</h2>
-      <span id="clock">00:00</span>
-    </div>
+    <div id="scores" class="container-fluid px-3 d-none">
+        <div id="scoreBar" class="d-flex align-items-center justify-content-between w-100">
 
-    <!-- Right side: fixed 5 score slots -->
-    <div id="scoreList" class="d-flex align-items-center justify-content-end">
-      <div class="scoreListItem mx-1">_</div>
-      <div class="scoreListItem mx-1">_</div>
-      <div class="scoreListItem mx-1">_</div>
-      <div class="scoreListItem mx-1">_</div>
-      <div class="scoreListItem mx-1">_</div>
-    </div>
-  </div>
-</div>
+            <!-- Left side: score + clock -->
+            <div class="d-flex flex-column align-items-start">
+                <h2 id="score" class="mb-0">Score: 0</h2>
+                <span id="clock">00:00</span>
+            </div>
 
-
-
-    
-    <div id="info-toast" class="toast align-items-center text-bg-light border-0 position-fixed top-25 start-50 translate-middle" 
-         role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="3000" style="z-index: 1080;">
-      <div class="d-flex">
-        <div id="info-toast-body" class="toast-body text-center w-100">
-    
+            <!-- Right side: fixed 5 score slots -->
+            <div id="scoreList" class="d-flex align-items-center justify-content-end">
+                <div class="scoreListItem mx-1">_</div>
+                <div class="scoreListItem mx-1">_</div>
+                <div class="scoreListItem mx-1">_</div>
+                <div class="scoreListItem mx-1">_</div>
+                <div class="scoreListItem mx-1">_</div>
+            </div>
         </div>
-      </div>
+    </div>
+
+
+
+
+    <div id="info-toast"
+        class="toast align-items-center text-bg-light border-0 position-fixed top-25 start-50 translate-middle"
+        role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="3000" style="z-index: 1080;">
+        <div class="d-flex">
+            <div id="info-toast-body" class="toast-body text-center w-100">
+
+            </div>
+        </div>
     </div>
     </div>
     <div id="game">
         <div id="panorama" class="d-none"></div>
         <div id="mcmap" class="d-none"></div>
     </div>
-    <div id="footer">
+    <div id="footer" class="position-fixed bottom-0 end-0 p-3">
+        <a href="https://hc-tcg.online" target="_blank" rel="noopener noreferrer" class=" me-3 text-decoration-none text-light">
+            <i class="fa-solid fa-gamepad"></i> Check out HC TCG
+        </a>
+        <a href="https://maps.hermitcraft.dinip.pt/" target="_blank" rel="noopener noreferrer" class=" me-3 text-decoration-none text-light">
+            <i class="fa-solid fa-map"></i> HC map renders by Dinip
+        </a>
+        <a href="https://discord.gg/8ydFhEV7Cq" target="_blank" rel="noopener noreferrer" class="me-3 text-decoration-none text-light">
+            <i class="fa-brands fa-discord"></i> Discord
+        </a>
+        <a href="https://github.com/akr4s1a/hermitguessr" target="_blank" rel="noopener noreferrer" class="me-3 text-decoration-none text-light">
+            <i class="fa-brands fa-github"></i> Github
+        </a>
+
+
     </div>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
     <script type="module" src="js/modules/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
         integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="

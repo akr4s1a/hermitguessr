@@ -26,6 +26,20 @@ export default class GameManager {
         return this.leaderboard.get();
     }
 
+    signalShutdown(){
+        this.clients.forEach((ws)=>{
+            ws.send(JSON.stringify({type:"shutdown"}));
+        })
+        process.exit(0);
+    }
+    signalDelayShutdown(){
+        setInterval(()=>{
+            let inProgress = Array.from(this.games.values())
+            .filter(g => g.total < 5 && Date.now() - g.startTime < 600000);
+        if (inProgress.length == 0){process.exit(0);}
+        },1000)
+    }
+
     async proc(ws) {
         ws.send(JSON.stringify({ type: "welcome" }));
         ws.lastTime = Date.now();

@@ -149,14 +149,15 @@ export function handleGameStart(state, dom, socketService, guessHandler) {
     document.querySelectorAll('.scoreListItem').forEach(el=>{el.innerHTML=''});
     dom.get("startBtn").classList.add('me-5')
     dom.get("startBtn").disabled = true;
-    document.getElementById("reportBtn").classList.remove('d-none');
-    document.getElementById("mcmap").classList.remove('d-none');
-    document.getElementById("panorama").classList.remove('d-none');
-    document.getElementById("season_dropdown").classList.add('d-none');
+    dom.get('scores').classList.remove('d-none')
+    dom.get("reportBtn").classList.remove('d-none');
+    dom.get("mcmap").classList.remove('d-none');
+    dom.get("panorama").classList.remove('d-none');
+    dom.get("season_dropdown").classList.add('d-none');
     dom.get("submitBtn").classList.remove('d-none');
     dom.get("submitBtn").classList.add('disabled');
     dom.get("setNameBtn").classList.add('d-none');
-    document.getElementById("username-label").classList.add('d-none');
+    dom.get('username_label').classList.add('d-none');
 }
 
 export function startGame(dom, socketService) {

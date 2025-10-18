@@ -21,7 +21,13 @@ export class UIElements {
             seasonMenu: document.getElementById("season_menu"),
             clock: document.getElementById("clock"),
             infoToast: document.getElementById("info-toast"),
-            infoToastBody: document.getElementById("info-toast-body")
+            infoToastBody: document.getElementById("info-toast-body"),
+            scores: document.getElementById('scores'),
+            reportBtn: document.getElementById("reportBtn"),
+            mcmap: document.getElementById("mcmap"),
+            panorama: document.getElementById("panorama"),
+            season_dropdown: document.getElementById("season_dropdown"),
+            username_label: document.getElementById("username-label")
         };
 
         this.audio = {

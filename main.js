@@ -25,14 +25,14 @@ function authMiddleware(req, res, next) {
   let accessToken = req.cookies.access_token;
   let refreshToken = req.cookies.refresh_token;
 
-  if (!accessToken && !refreshToken) return res.redirect('/admin/login');
+  if (!accessToken && !refreshToken) return res.redirect('/admin');
 
   try {
     let verify = jwt.verify(accessToken, localServerConfig.JWT_SECRET);
     req.user = verify;
     return next();
   } catch (err) {
-    if (!refreshToken) return res.redirect('/admin/login');
+    if (!refreshToken) return res.redirect('/admin');
     try {
       let verifyRefresh = jwt.verify(refreshToken, localServerConfig.JWT_REFRESH_SECRET);
       let newAccessToken = jwt.sign(
@@ -51,7 +51,9 @@ function authMiddleware(req, res, next) {
       req.user = verifyRefresh;
       return next();
     } catch (refreshErr) {
-      return res.redirect('/admin/login');
+      res.clearCookie('access_token');
+      res.clearCookie('refresh_token');
+      return res.redirect('/admin');
     }
   }
 }

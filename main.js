@@ -3,7 +3,7 @@ console.log("Starting server...");
 import express from "express";
 import { WebSocketServer } from "ws";
 import http from "http";
-import sqlite3pkg from "sqlite3";
+import Database from 'better-sqlite3';
 import gm from "./backend/gameManager.js";
 import localServerConfig from "./localServerConfig.json" with { type: "json" };
 import path from "path";
@@ -109,14 +109,7 @@ app.post('/admin/refresh', async (req, res) => {
   }
 });
 
-const sqlite3 = sqlite3pkg.verbose();
-const db = new sqlite3.Database("./leaderboard.db", (err) => {
-  if (err) {
-    console.error(err.message);
-  } else {
-    console.log("Connected to the leaderboard database.");
-  }
-});
+const db = new Database("./leaderboard.db");
 
 let total_rejected = 0;
 const gameManager = new gm(db);

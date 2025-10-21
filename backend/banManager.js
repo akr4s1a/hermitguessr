@@ -2,39 +2,19 @@ import Filter from 'bad-words'
 import GameUtils from './gameUtils.js'
 import fs from 'fs/promises'
 export default class BanManager {
-    constructor(db, bannedData) {
-        this.db = db;
+    constructor(dbManager, bannedData) {
+        this.dbManager = dbManager;
         this.bannedIPs = bannedData.banned_ips || [];
         this.bannedUsers = bannedData.banned_users || [];
         this.filter = new Filter();
     }
 
-    async isIPBanned(ip) {
-        return new Promise((resolve, reject) => {
-            this.db.all('SELECT * FROM banned', (err, rows) => {
-                if (err) {
-                    console.error(err);
-                    resolve(false);
-                    return;
-                }
-                let dbBans = rows.map(x => x.banned);
-                resolve([...this.bannedIPs, ...dbBans].includes(ip));
-            });
-        });
+    isIPBanned(ip) {
+        return this.dbManager.isBanned(ip) || this.bannedIPs.includes(ip)
     }
 
-    async isUserCodeBanned(userCode) {
-        return new Promise((resolve, reject) => {
-            this.db.all('SELECT * FROM banned', (err, rows) => {
-                if (err) {
-                    console.error(err);
-                    resolve(false);
-                    return;
-                }
-                let dbBans = rows.map(x => x.banned);
-                resolve(dbBans.includes(userCode));
-            });
-        });
+    isUserCodeBanned(userCode) {
+        return this.dbManager.isBanned(userCode) || this.bannedUsers.includes(userCode)
     }
 
     isUsernameBanned(username) {

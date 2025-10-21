@@ -13,9 +13,9 @@ export default class GameManager {
         this.games = new Map();
         this.formatCount = {};
 
-        this.banManager = new BanManager(db, banned);
         this.dbManager = new DatabaseManager(db);
-        this.leaderboard = new LeaderboardManager(db);
+        this.banManager = new BanManager(this.dbManager, banned);
+        this.leaderboard = new LeaderboardManager(this.dbManager);
         this.panoManager = new PanoramaManager(panos);
         this.messageHandler = new MessageHandler(this);
 

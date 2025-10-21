@@ -2,10 +2,11 @@
   "dependencies": {
     "bad-words": "^3.0.4",
     "bcrypt": "^6.0.0",
-    "sqlite3": "^5.1.7",
+    "better-sqlite3": "^12.4.1",
     "cookie-parser": "^1.4.7",
     "express": "^4.21.2",
     "jsonwebtoken": "^9.0.2",
+    "sqlite3": "^5.1.7",
     "ua-parser-js": "^1.0.37",
     "ws": "^8.18.3"
   },

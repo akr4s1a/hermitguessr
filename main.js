@@ -51,6 +51,8 @@ function authMiddleware(req, res, next) {
       req.user = verifyRefresh;
       return next();
     } catch (refreshErr) {
+      res.clearCookie('access_token');
+      res.clearCookie('refresh_token');
       return res.redirect('/admin');
     }
   }

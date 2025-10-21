@@ -30,6 +30,6 @@ export default class GameUtils {
     }
 
     static generateCode() {
-        return Math.floor(Math.random() * 96777215).toString(16);
+        return Math.floor(Math.random() * 0xFFFFFFFF).toString(16);
     }
 }

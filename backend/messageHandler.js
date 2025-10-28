@@ -86,6 +86,11 @@ export default class MessageHandler {
         this.gameManager.games.set(ws.userCode, session);
         this.gameManager.formatCount[data.format] = (this.gameManager.formatCount[data.format] || 0) + 1;
 
+
+        if (ws.name){
+            let currentHighScore = this.gameManager.dbManager.getUserHighScore(ws.name,session.getSeasonText());
+            ws.send(JSON.stringify({ type: "current_high_score", score: currentHighScore}))
+        }
         ws.send(JSON.stringify({ type: "code", code: session.gameCode }));
         ws.startTime = Date.now();
 

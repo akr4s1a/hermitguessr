@@ -127,6 +127,9 @@ body{
     float:right;
 
 }
+#currentHighScore{
+
+}
 #mcmap { height: 50vh;width:auto;margin:0;padding:0; }
 #title{
     text-align: center;
@@ -144,7 +147,7 @@ body{
     color:white;
     margin-bottom: 1em;
 }
-#subtitle,#score{
+#subtitle,#score,#currentHighScore{
     text-shadow:
     -1px -1px 0 #000,  
      1px -1px 0 #000,
@@ -174,7 +177,7 @@ body{
     white-space: nowrap;
     margin: 0.5vh 0.5vw;
 }
-#score, #clock{
+#score, #clock,#currentHighScore{
     font-family: 'Kanit', sans-serif;
     color:white;
     z-index: 999;
@@ -222,6 +225,9 @@ body{
         display:grid;
         grid-template-columns: 3fr;
         grid-gap:2vw;
+    }
+    #currentHighScore{
+        display:none;
     }
     #scores{
         text-align: center;

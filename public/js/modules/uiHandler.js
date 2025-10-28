@@ -27,7 +27,8 @@ export class UIElements {
             mcmap: document.getElementById("mcmap"),
             panorama: document.getElementById("panorama"),
             season_dropdown: document.getElementById("season_dropdown"),
-            username_label: document.getElementById("username-label")
+            username_label: document.getElementById("username-label"),
+            currentHighScore: document.getElementById("currentHighScore")
         };
 
         this.audio = {
@@ -112,6 +113,10 @@ export function showTemporaryMessage(dom, message, duration = 3000) {
 
 export function hideTemporaryMessage(dom){
     bootstrap.Toast.getOrCreateInstance(dom.get("infoToast")).hide();
+}
+
+export function setCurrentHighScore(data,dom){
+    dom.get("currentHighScore").textContent = `Current High Score: ${data.score.toFixed(2)}`
 }
 
 export function setupSeasonMenu() {

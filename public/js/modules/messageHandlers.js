@@ -4,7 +4,7 @@ import {
     handleGameOver, 
     loadPanorama ,
 } from './gameLogic.js'
-import { showTemporaryMessage } from './uiHandler.js'
+import { showTemporaryMessage, setCurrentHighScore } from './uiHandler.js'
 
 export let handlers = {
     code: (data, state, dom) => {
@@ -54,6 +54,9 @@ export let handlers = {
         loadPanorama(data, state, dom);
     },
 
+    current_high_score: (data,state,dom)=>{
+        setCurrentHighScore(data,dom);
+    },
 
     timeout: (data, state, dom) => {
         if (showTemporaryMessage) {
